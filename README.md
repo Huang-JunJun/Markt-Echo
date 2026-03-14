@@ -1,52 +1,96 @@
-# OpenClaw 交易复盘助手 V1（最小可用闭环）
+# OpenClaw 交易复盘助手 V1
 
-本仓库实现了你定义的 V1 两层分工：
-- OpenClaw 层：触发、编排、模型总结、输出、手动重跑、查看今日结果
-- Python 数据服务层：拉取/清洗/标准化/存储，向 OpenClaw 提供统一结构化 JSON
+本仓库实现了 V1 两层分工：
+- OpenClaw 层：正式入口、模型加工、正文输出、回写
+- Python 数据服务层：抓取、清洗、标准化、存储、对外提供统一 JSON
 
 当前仅覆盖：
-1. 盘前复盘
-2. 9:25 竞价复盘
-3. 收盘复盘
+1. 盘前复盘 `pre_market`
+2. 9:25 竞价复盘 `auction`
+3. 收盘复盘 `close`
 
 不包含午盘复盘、盘中监听、多用户、复杂后台等扩展能力。
 
-## 1. 项目结构
+## 1. 当前怎么使用
 
-```text
-app/
-  api.py                # FastAPI 路由
-  main.py               # 应用入口
-  service.py            # 业务编排（生成报告、查询、回写）
-  storage.py            # SQLite 存储（结构化、原始、状态、最终文本）
-  schemas.py            # 统一数据结构
-  providers/
-    mock_provider.py    # V1 mock 数据源（默认）
-
-openclaw/
-  prompts/              # 三类报告提示词模板
-  workflows/v1_tasks.yaml  # OpenClaw 任务编排蓝图（调度+手动触发）
-
-tests/
-  test_api.py           # API 基础用例
-```
-
-## 2. FastAPI 数据服务
-
-### 2.1 启动
+### 1.1 先启动 Python 数据服务
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .[dev]
-uvicorn app.main:app --reload
+PYTHONPATH=. .venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+```
+
+健康检查：
+
+```bash
+curl http://127.0.0.1:8000/health
 ```
 
 默认地址：`http://127.0.0.1:8000`
 
-可选环境变量见 `.env.example`。
+### 1.2 在 OpenClaw Control UI 中如何触发
 
-### 2.2 已实现接口
+当前这台机器上，建议按下面的 agent 与命令使用：
+
+1. 盘前复盘
+   - agent：`main`
+   - 命令：`/pre_market` 或 `/盘前复盘`
+2. 收盘复盘
+   - agent：`close-main`
+   - 命令：`/close` 或 `/收盘复盘`
+3. 竞价复盘
+   - agent：`auction-real-main`
+   - 命令：`/auction` 或 `/竞价复盘`
+
+说明：
+- 最终聊天回复默认只返回正文，不返回 JSON。
+- 技术字段仍会写入日志和数据库，便于排查。
+- 如果某个 agent 的旧会话残留了历史上下文，直接新开一个 session 再发同一条命令即可。
+- 中文入口与英文入口等价，触发的是同一条既有链路，不是单独维护的第二套实现。
+
+### 1.3 当前节点状态
+
+1. `pre_market`
+   - 当前数据状态：`real_partial`
+   - 说明：核心真实字段已接通，部分观察方向仍为 derived
+2. `close`
+   - 当前数据状态：`real`
+   - 说明：核心复盘口径已接近正式可用
+3. `auction`
+   - 当前数据状态：`real_partial`
+   - 说明：指数竞价、强弱榜、成交榜为真实；方向和情绪仍为 derived
+   - 额外说明：如果当前时间不在 `09:15-09:26` 竞价窗口，返回的是最新可用真实快照，并会在 `warnings` 中明确提示
+
+## 2. 项目结构
+
+```text
+app/
+  api.py                         # FastAPI 路由
+  main.py                        # 应用入口
+  service.py                     # 业务编排（生成报告、查询、回写）
+  storage.py                     # SQLite 存储
+  schemas.py                     # 统一数据结构
+  providers/
+    mock_provider.py             # mock 数据源
+    real_pre_market_provider.py  # 盘前真实数据源
+    real_auction_provider.py     # 竞价真实数据源
+    real_close_provider.py       # 收盘真实数据源
+
+openclaw/
+  prompts/                       # 三类正文模板
+  scripts/                       # fetch / writeback 辅助脚本
+  skills/                        # /pre_market /auction /close 正式入口
+  workflows/                     # V1 workflow 蓝图（可选）
+
+tests/
+  test_api.py                    # API 基础用例
+```
+
+## 3. FastAPI 数据服务
+
+### 3.1 已实现接口
 
 - `GET /health`
 - `POST /v1/review/pre-market`
@@ -55,77 +99,108 @@ uvicorn app.main:app --reload
 - `GET /v1/reports/today?report_type=pre_market|auction|close`
 - `POST /v1/reports/{report_id}/final-text`
 
-### 2.3 统一返回结构（示例）
+### 3.2 统一返回结构
 
 ```json
 {
   "ok": true,
   "data": {
-    "report_id": "pre_market-2026-03-11-xxxx",
-    "report_type": "pre_market",
-    "trade_date": "2026-03-11",
-    "generated_at": "2026-03-11T08:40:00+08:00",
+    "report_id": "auction-2026-03-14-xxxx",
+    "report_type": "auction",
+    "trade_date": "2026-03-14",
+    "generated_at": "2026-03-14T09:25:10+08:00",
     "summary_data": {},
     "raw_data": {},
     "warnings": [],
     "status": "SUCCESS",
-    "source": "mock"
+    "source": "real_partial"
   },
   "error": null
 }
 ```
 
 约束：
-- 外层结构固定：`ok/data/error`
-- `summary_data` + `raw_data` 双层并存
-- 数据缺失通过 `warnings` 提示，不因局部缺失导致整体失败
+- 外层结构固定：`ok / data / error`
+- `summary_data` 给 OpenClaw 生成正文
+- `raw_data` 保留技术明细
+- 缺失或降级信息进入 `warnings`
 
-## 3. 存储策略（V1）
+### 3.3 直接调用 API 示例
 
-使用 SQLite（`.data/market_echo_v1.db`）保存：
+盘前：
+
+```bash
+curl -X POST http://127.0.0.1:8000/v1/review/pre-market \
+  -H 'Content-Type: application/json' \
+  -d '{"use_mock": false}'
+```
+
+竞价：
+
+```bash
+curl -X POST http://127.0.0.1:8000/v1/review/auction \
+  -H 'Content-Type: application/json' \
+  -d '{"use_mock": false}'
+```
+
+收盘：
+
+```bash
+curl -X POST http://127.0.0.1:8000/v1/review/close \
+  -H 'Content-Type: application/json' \
+  -d '{"use_mock": false}'
+```
+
+查看今日报告：
+
+```bash
+curl 'http://127.0.0.1:8000/v1/reports/today?report_type=auction'
+```
+
+## 4. OpenClaw 层落地方式
+
+当前正式入口以 `skills` 为准：
+- [`openclaw/skills/pre_market/SKILL.md`](openclaw/skills/pre_market/SKILL.md)
+- [`openclaw/skills/auction/SKILL.md`](openclaw/skills/auction/SKILL.md)
+- [`openclaw/skills/close/SKILL.md`](openclaw/skills/close/SKILL.md)
+
+当前 OpenClaw 的职责是：
+1. 触发 Python fetch
+2. 读取结构化 `summary_data`
+3. 调用模型生成正文
+4. 回写 `final_text`
+5. 默认只把正文回复给用户
+
+`openclaw/workflows/` 下的 YAML 仍保留为 V1 蓝图，但当前联调与正式手动入口以 `skills` 为主，不建议把 README 里的使用方式理解成“必须先导入 workflow 才能手动跑”。
+
+## 5. 存储与排查
+
+SQLite 数据库：
+- `.data/market_echo_v1.db`
+
+运行日志：
+- `.data/pre_market_runs.jsonl`
+- `.data/auction_runs.jsonl`
+- `.data/close_runs.jsonl`
+
+保存内容：
 1. 报告类型
 2. 生成时间
 3. 结构化数据
 4. 原始数据
-5. 最终输出文本（由 OpenClaw 回写）
-6. 执行状态（SUCCESS/PARTIAL/FAILED）
+5. 最终输出文本
+6. 执行状态
 7. 错误信息
-
-## 4. OpenClaw 层落地方式
-
-`openclaw/workflows/v1_tasks.yaml` 提供了 V1 编排蓝图，包含：
-- 三个定时任务
-  - 盘前：工作日 08:40
-  - 竞价：工作日 09:25 + 延迟 10 秒
-  - 收盘：工作日 15:10
-- 三个手动命令：`/run pre_market`、`/run auction`、`/run close`
-- 今日结果查看命令：`/today ...`
-- 失败提示分支
-- 模型总结后回写 `final_output_text`
-
-`openclaw/prompts/` 中提供三类固定模板提示词。
-
-> 说明：不同 OpenClaw 版本的 workflow 字段命名可能有差异，蓝图需要在 Control UI 内按实际字段映射一次。
-
-盘前单节点验收请使用：
-- `openclaw/workflows/v1_pre_market_only.yaml`
-- `acceptance/pre_market_acceptance.md`
-
-## 5. 联调顺序（按你的要求）
-
-1. 先做 mock 联调（当前默认已启用）
-2. 先落地盘前复盘
-3. 再落地收盘复盘
-4. 最后优化竞价复盘
 
 ## 6. 测试
 
 ```bash
-pytest
+PYTHONPATH=. .venv/bin/pytest -q
 ```
 
 当前测试覆盖：
 - 健康检查
-- 三节点接口生成（含 mock 回退 warning）
+- 三节点接口生成
+- mock / real provider 路由
 - 今日结果查询
-- 最终文本回写
+- `final_text` 回写

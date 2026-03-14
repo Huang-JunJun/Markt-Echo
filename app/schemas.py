@@ -58,6 +58,7 @@ class PreMarketSummaryData(BaseModel):
 
 
 class AuctionSummaryData(BaseModel):
+    index_auction: List[PricePoint] = Field(default_factory=list)
     top_gainers: List[StockPoint] = Field(default_factory=list)
     top_losers: List[StockPoint] = Field(default_factory=list)
     turnover_top: List[StockPoint] = Field(default_factory=list)
@@ -71,6 +72,7 @@ class CloseSummaryData(BaseModel):
     northbound_flow: Dict[str, Optional[float]] = Field(default_factory=dict)
     market_breadth: Dict[str, Optional[int]] = Field(default_factory=dict)
     limit_up_stats: Dict[str, Optional[int]] = Field(default_factory=dict)
+    turnover_summary: Dict[str, Any] = Field(default_factory=dict)
 
 
 class ReportPayload(BaseModel):

@@ -1,0 +1,9 @@
+{
+  "runId": "ee65b20d-8bb6-41f3-a41f-e5a9613a6b0c",
+  "status": "ok",
+  "payload_count": 1,
+  "final_text_only": true,
+  "text_contains_json_fields": false,
+  "agent": "close-main",
+  "trigger": "/close"
+}

@@ -1,0 +1,13 @@
+{
+  "ts": "2026-03-14T07:42:55.665639+00:00",
+  "mode": "writeback",
+  "ok": true,
+  "base_url": "http://127.0.0.1:8000",
+  "use_mock": false,
+  "report_id": "auction-2026-03-14-e40a57103b",
+  "writeback_response": {
+    "ok": true,
+    "report_id": "auction-2026-03-14-e40a57103b",
+    "status": "SUCCESS"
+  }
+}

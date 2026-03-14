@@ -1,6 +1,6 @@
 ---
 name: pre_market
-description: 盘前正式入口。Python 仅供数，OpenClaw 使用模型生成盘前文本并回写。
+description: 盘前正式入口（支持 /pre_market、/盘前复盘）。Python 仅供数，OpenClaw 使用模型生成盘前文本并回写。
 user-invocable: true
 ---
 
@@ -8,7 +8,8 @@ user-invocable: true
 
 ## 触发方式
 
-用户在 OpenClaw 聊天中输入 `/pre_market`。
+用户在 OpenClaw 聊天中输入 `/pre_market` 或 `/盘前复盘`。
+两种输入都必须触发同一条现有 `pre_market` 链路，不允许分叉实现。
 
 ## 执行规则
 
@@ -18,7 +19,7 @@ user-invocable: true
 {
   "action": "invoke",
   "invokeCommand": "system.run",
-  "invokeParamsJson": "{\"command\":[\"/bin/zsh\",\"-lc\",\"python3 /Users/Project/Market-Echo/openclaw/scripts/run_pre_market.py --mode fetch --base-url http://127.0.0.1:8000 --use-mock true --output json\"],\"timeoutMs\":120000}"
+  "invokeParamsJson": "{\"command\":[\"/bin/zsh\",\"-lc\",\"python3 /Users/Project/Market-Echo/openclaw/scripts/run_pre_market.py --mode fetch --base-url http://127.0.0.1:8000 --use-mock false --output json\"],\"timeoutMs\":120000}"
 }
 ```
 3. 从 `payload.stdout` 解析 JSON，必须拿到 `report_id`、`trade_date`、`summary_data`、`warnings`。

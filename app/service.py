@@ -6,7 +6,7 @@ from uuid import uuid4
 from zoneinfo import ZoneInfo
 
 from app.config import DEFAULT_TIMEZONE, DEFAULT_USE_MOCK
-from app.providers import MockProvider
+from app.providers import MockProvider, RealAuctionProvider, RealCloseProvider, RealPreMarketProvider
 from app.schemas import (
     AuctionSummaryData,
     CloseSummaryData,
@@ -23,6 +23,9 @@ class DataService:
     def __init__(self, store: ReportStore):
         self.store = store
         self.mock_provider = MockProvider()
+        self.real_pre_market_provider = RealPreMarketProvider()
+        self.real_auction_provider = RealAuctionProvider()
+        self.real_close_provider = RealCloseProvider()
         self.tz = ZoneInfo(DEFAULT_TIMEZONE)
 
     def _now(self) -> datetime:
@@ -57,11 +60,16 @@ class DataService:
 
         warnings: List[str] = []
 
-        if not resolved_use_mock:
-            # V1 先保证闭环稳定，真实源后续逐步接入。
-            warnings.append("未配置真实数据源，已回退到 mock 数据")
-
         provider = self.mock_provider
+        if report_type == ReportType.PRE_MARKET and not resolved_use_mock:
+            provider = self.real_pre_market_provider
+        elif report_type == ReportType.AUCTION and not resolved_use_mock:
+            provider = self.real_auction_provider
+        elif report_type == ReportType.CLOSE and not resolved_use_mock:
+            provider = self.real_close_provider
+        elif not resolved_use_mock:
+            # 未配置真实数据源的节点仍保持 mock。
+            warnings.append("未配置真实数据源，已回退到 mock 数据")
 
         try:
             if report_type == ReportType.PRE_MARKET:
