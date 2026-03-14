@@ -1,0 +1,13 @@
+\n- 今晚 20:30 美国 CPI 数据\\n\\n## 3) 重点观察方向\\n- AI算力\\n- 机器人\\n- 低空经济\\n\\n## 4) 开盘前执行清单\\n- 核对期指与海外市场方向是否一致\\n- 按宏观事件时间点设置盘中观察提醒\\n- 围绕重点方向准备候选标的与触发条件\\n- 根据 warnings 预设仓位与风险应对\\n\\n## 数据提示\\n- summary_data: {\"index_futures\": [{\"name\": \"沪深300主连\", \"value\": 3658.2, \"change_pct\": 0.34}, {\"name\": \"中证500主连\", \"value\": 5661.7, \"change_pct\": -0.11}], \"overseas_market\": [{\"name\": \"NASDAQ\", \"value\": 18420.7, \"change_pct\": 0.63}, {\"name\": \"S&P 500\", \"value\": 5342.9, \"change_pct\": 0.39}], \"macro_events\": [\"今日 10:00 公布社融数据\", \"今晚 20:30 美国 CPI 数据\"], \"watchlist\": [\"AI算力\", \"机器人\", \"低空经济\"], \"sentiment_score\": 63.0}\\n- warnings: []\",\"writeback_response\":{\"ok\":true,\"report_id\":\"pre_market-2026-03-11-4f6d28e688\",\"status\":\"SUCCESS\"},\"report_id\":\"pre_market-2026-03-11-4f6d28e688\"}"
+            - generic [ref=e1063]:
+              - generic [ref=e1064]: Assistant
+              - generic [ref=e1065]: 10:44
+        - generic [ref=e1074]:
+          - generic [ref=e1075]: U
+          - generic [ref=e1076]:
+            - paragraph [ref=e1079]:
+              - text: 执行一次 pre_market 手动任务：调用
+              - link "http://127.0.0.1:8000/v1/review/pre-market(use_mock=true)，按盘前模板生成最终文本，再回写" [ref=e1080] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/v1/review/pre-market(use_mock=true)%EF%BC%8C%E6%8C%89%E7%9B%98%E5%89%8D%E6%A8%A1%E6%9D%BF%E7%94%9F%E6%88%90%E6%9C%80%E7%BB%88%E6%96%87%E6%9C%AC%EF%BC%8C%E5%86%8D%E5%9B%9E%E5%86%99
+              - text: "/v1/reports/{report_id}/final-text，最后返回 report_id 和 writeback_response。"
+       

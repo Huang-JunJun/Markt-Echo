@@ -1,0 +1,6 @@
+run_id=65e9a83a-45a7-4c83-9c66-c25c905e1e5b
+report_id=pre_market-2026-03-11-4f6d28e688
+api_ok=True
+writeback_ok=True
+writeback_status=SUCCESS
+headings=# 盘前复盘（2026-03-11） | ## 1) 海内外与期指信号 | ## 2) 今日关键事件 | ## 3) 重点观察方向 | ## 4) 开盘前执行清单 | ## 数据提示

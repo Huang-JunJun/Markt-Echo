@@ -1,0 +1,39 @@
+version: 1
+name: openclaw-trading-recap-v1-pre-market-only
+
+settings:
+  timezone: Asia/Shanghai
+  data_service_base_url: http://127.0.0.1:8000
+
+commands:
+  - name: /run pre_market
+    action: run_task
+    task_id: pre_market_daily
+  - name: /today pre_market
+    action: http_get
+    path: /v1/reports/today?report_type=pre_market
+
+tasks:
+  - id: pre_market_daily
+    description: 盘前复盘
+    trigger:
+      type: schedule
+      cron: "0 40 8 * * 1-5"
+    steps:
+      - type: http_post
+        path: /v1/review/pre-market
+        body:
+          use_mock: true
+      - type: model_generate
+        prompt_file: openclaw/prompts/pre_market_prompt.md
+        input_path: data
+      - type: http_post
+        path_template: /v1/reports/{{data.report_id}}/final-text
+        body:
+          final_output_text: "{{model_output}}"
+          status: SUCCESS
+      - type: reply
+        content: "{{model_output}}"
+    on_failure:
+      - type: reply
+        content: "盘前复盘任务失败，请检查数据服务 /health 与接口日志。"

@@ -1,0 +1,84 @@
+{
+  "report_id": "pre_market-2026-03-11-f25e7bdec0",
+  "report_type": "pre_market",
+  "trade_date": "2026-03-11",
+  "generated_at": "2026-03-11T16:22:31.284084+08:00",
+  "summary_data": {
+    "index_futures": [
+      {
+        "name": "沪深300主连",
+        "value": 3658.2,
+        "change_pct": 0.34
+      },
+      {
+        "name": "中证500主连",
+        "value": 5661.7,
+        "change_pct": -0.11
+      }
+    ],
+    "overseas_market": [
+      {
+        "name": "NASDAQ",
+        "value": 18420.7,
+        "change_pct": 0.63
+      },
+      {
+        "name": "S&P 500",
+        "value": 5342.9,
+        "change_pct": 0.39
+      }
+    ],
+    "macro_events": [
+      "今日 10:00 公布社融数据",
+      "今晚 20:30 美国 CPI 数据"
+    ],
+    "watchlist": [
+      "AI算力",
+      "机器人",
+      "低空经济"
+    ],
+    "sentiment_score": 63.0
+  },
+  "raw_data": {
+    "index_futures": [
+      {
+        "name": "沪深300主连",
+        "value": 3658.2,
+        "change_pct": 0.34
+      },
+      {
+        "name": "中证500主连",
+        "value": 5661.7,
+        "change_pct": -0.11
+      }
+    ],
+    "overseas_market": [
+      {
+        "name": "NASDAQ",
+        "value": 18420.7,
+        "change_pct": 0.63
+      },
+      {
+        "name": "S&P 500",
+        "value": 5342.9,
+        "change_pct": 0.39
+      }
+    ],
+    "macro_events": [
+      "今日 10:00 公布社融数据",
+      "今晚 20:30 美国 CPI 数据"
+    ],
+    "watchlist": [
+      "AI算力",
+      "机器人",
+      "低空经济",
+      "机器人"
+    ],
+    "sentiment_score": 63.0
+  },
+  "warnings": [],
+  "source": "mock",
+  "final_output_text": "# 盘前复盘（2026-03-11）\n\n## 1) 海内外与期指信号\n- 隔夜外盘偏强：NASDAQ +0.63%、S&P 500 +0.39%，风险偏好整体稳定。\n- 期指分化：沪深300主连 +0.34%，中证500主连 -0.11%，大盘相对占优。\n- 情绪分 63.0，处于偏积极区间，开盘更看量能与承接确认。\n\n## 2) 今日关键事件\n- 今日 10:00 公布社融数据。\n- 今晚 20:30 美国 CPI 数据。\n\n## 3) 重点观察方向\n- AI算力：关注核心标的是否放量上行，判断主线延续强度。\n- 机器人：观察前排个股带动能力与板块扩散节奏是否同步。\n- 低空经济：跟踪冲高后的承接质量，优先看龙头相对强度。\n\n## 4) 开盘前执行清单\n- 对照竞价与期指方向，若背离先降低首笔仓位。\n- 围绕三大方向各选 1-2 只观察标的，提前设定触发条件。\n- 重点盯 10:00 前后社融数据发布后的指数与成交额反馈。\n- 预留晚间 CPI 事件的机动仓位，减少尾盘被动交易。\n\n## 数据提示\n- 无\n",
+  "execution_status": "SUCCESS",
+  "error_message": null
+}

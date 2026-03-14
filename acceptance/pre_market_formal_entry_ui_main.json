@@ -1,0 +1,309 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "96681B663FC276568126E683A02F00B6",
+  "url": "http://127.0.0.1:18789/chat?session=agent%3Amain%3Amain",
+  "snapshot": "- generic [ref=e3]:\n  - banner [ref=e4]:\n    - generic [ref=e5]:\n      - button \"折叠侧边栏\" [ref=e6] [cursor=pointer]:\n        - img [ref=e8]\n      - generic [ref=e9]:\n        - img \"OpenClaw\" [ref=e11]\n        - generic [ref=e12]:\n          - generic [ref=e13]: OPENCLAW\n          - generic [ref=e14]: Gateway Dashboard\n    - generic [ref=e15]:\n      - generic [ref=e16]:\n        - generic [ref=e18]: 版本\n        - generic [ref=e19]: 2026.3.7\n      - generic [ref=e20]:\n        - generic [ref=e22]: 健康状况\n        - generic [ref=e23]: 正常\n      - group \"Theme\" [ref=e25]:\n        - button \"System theme\" [pressed] [ref=e27] [cursor=pointer]:\n          - img [ref=e28]\n        - button \"Light theme\" [ref=e30] [cursor=pointer]:\n          - img [ref=e31]\n        - button \"Dark theme\" [ref=e37] [cursor=pointer]:\n          - img [ref=e38]\n  - complementary [ref=e40]:\n    - generic [ref=e41]:\n      - button \"聊天 −\" [expanded] [ref=e42] [cursor=pointer]:\n        - generic [ref=e43]: 聊天\n        - generic [ref=e44]: −\n      - link \"聊天\" [ref=e46] [cursor=pointer]:\n        - /url: /chat\n        - img [ref=e48]\n        - generic [ref=e50]: 聊天\n    - button \"控制 +\" [ref=e52] [cursor=pointer]:\n      - generic [ref=e53]: 控制\n      - generic [ref=e54]: +\n    - generic [ref=e55]:\n      - button \"代理 −\" [expanded] [ref=e56] [cursor=pointer]:\n        - generic [ref=e57]: 代理\n        - generic [ref=e58]: −\n      - generic [ref=e59]:\n        - link \"代理\" [ref=e60] [cursor=pointer]:\n          - /url: /agents\n          - img [ref=e62]\n          - generic [ref=e64]: 代理\n        - link \"技能\" [ref=e65] [cursor=pointer]:\n          - /url: /skills\n          - img [ref=e67]\n          - generic [ref=e69]: 技能\n        - link \"节点\" [ref=e70] [cursor=pointer]:\n          - /url: /nodes\n          - img [ref=e72]\n          - generic [ref=e74]: 节点\n    - generic [ref=e75]:\n      - button \"设置 −\" [expanded] [ref=e76] [cursor=pointer]:\n        - generic [ref=e77]: 设置\n        - generic [ref=e78]: −\n      - generic [ref=e79]:\n        - link \"配置\" [ref=e80] [cursor=pointer]:\n          - /url: /config\n          - img [ref=e82]\n          - generic [ref=e85]: 配置\n        - link \"调试\" [ref=e86] [cursor=pointer]:\n          - /url: /debug\n          - img [ref=e88]\n          - generic [ref=e97]: 调试\n        - link \"日志\" [ref=e98] [cursor=pointer]:\n          - /url: /logs\n          - img [ref=e100]\n          - generic [ref=e103]: 日志\n    - generic [ref=e104]:\n      - generic [ref=e106]: 资源\n      - link \"文档\" [ref=e108] [cursor=pointer]:\n        - /url: https://docs.openclaw.ai\n        - img [ref=e110]\n        - generic [ref=e112]: 文档\n  - main [ref=e113]:\n    - generic [ref=e114]:\n      - generic [ref=e115]:\n        - generic [ref=e116]: 聊天\n        - generic [ref=e117]: 用于快速干预的直接网关聊天会话。\n      - generic [ref=e119]:\n        - combobox [ref=e121] [cursor=pointer]:\n          - option \"heartbeat\" [selected]\n        - button \"刷新聊天数据\" [ref=e122] [cursor=pointer]:\n          - img [ref=e123]\n        - generic [ref=e126]: \"|\"\n        - button \"切换助手思考/工作输出\" [pressed] [ref=e127] [cursor=pointer]:\n          - img [ref=e128]\n        - button \"切换专注模式 (隐藏侧边栏 + 页面页眉)\" [ref=e138] [cursor=pointer]:\n          - img [ref=e139]\n        - button \"显示定时任务会话\" [pressed] [ref=e145] [cursor=pointer]:\n          - img [ref=e147]\n    - generic [ref=e150]:\n      - log [ref=e153]\n      - generic [ref=e155]:\n        - textbox [ref=e157]:\n          - /placeholder: Message (↩ to send, Shift+↩ for line breaks, paste images)\n        - generic [ref=e158]:\n          - button \"New session\" [ref=e159] [cursor=pointer]\n          - button \"Send ↵\" [ref=e160] [cursor=pointer]:\n            - text: Send\n            - generic [ref=e161]: ↵",
+  "refs": {
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "banner"
+    },
+    "e5": {
+      "role": "generic"
+    },
+    "e6": {
+      "role": "button",
+      "name": "折叠侧边栏"
+    },
+    "e8": {
+      "role": "img"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "img",
+      "name": "OpenClaw"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "generic"
+    },
+    "e14": {
+      "role": "generic"
+    },
+    "e15": {
+      "role": "generic"
+    },
+    "e16": {
+      "role": "generic"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "generic"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e22": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "generic"
+    },
+    "e25": {
+      "role": "group",
+      "name": "Theme"
+    },
+    "e27": {
+      "role": "button",
+      "name": "System theme"
+    },
+    "e28": {
+      "role": "img"
+    },
+    "e30": {
+      "role": "button",
+      "name": "Light theme"
+    },
+    "e31": {
+      "role": "img"
+    },
+    "e37": {
+      "role": "button",
+      "name": "Dark theme"
+    },
+    "e38": {
+      "role": "img"
+    },
+    "e40": {
+      "role": "complementary"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e42": {
+      "role": "button",
+      "name": "聊天 −"
+    },
+    "e43": {
+      "role": "generic"
+    },
+    "e44": {
+      "role": "generic"
+    },
+    "e46": {
+      "role": "link",
+      "name": "聊天"
+    },
+    "e48": {
+      "role": "img"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e52": {
+      "role": "button",
+      "name": "控制 +"
+    },
+    "e53": {
+      "role": "generic"
+    },
+    "e54": {
+      "role": "generic"
+    },
+    "e55": {
+      "role": "generic"
+    },
+    "e56": {
+      "role": "button",
+      "name": "代理 −"
+    },
+    "e57": {
+      "role": "generic"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e59": {
+      "role": "generic"
+    },
+    "e60": {
+      "role": "link",
+      "name": "代理"
+    },
+    "e62": {
+      "role": "img"
+    },
+    "e64": {
+      "role": "generic"
+    },
+    "e65": {
+      "role": "link",
+      "name": "技能"
+    },
+    "e67": {
+      "role": "img"
+    },
+    "e69": {
+      "role": "generic"
+    },
+    "e70": {
+      "role": "link",
+      "name": "节点"
+    },
+    "e72": {
+      "role": "img"
+    },
+    "e74": {
+      "role": "generic"
+    },
+    "e75": {
+      "role": "generic"
+    },
+    "e76": {
+      "role": "button",
+      "name": "设置 −"
+    },
+    "e77": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "generic"
+    },
+    "e79": {
+      "role": "generic"
+    },
+    "e80": {
+      "role": "link",
+      "name": "配置"
+    },
+    "e82": {
+      "role": "img"
+    },
+    "e85": {
+      "role": "generic"
+    },
+    "e86": {
+      "role": "link",
+      "name": "调试"
+    },
+    "e88": {
+      "role": "img"
+    },
+    "e97": {
+      "role": "generic"
+    },
+    "e98": {
+      "role": "link",
+      "name": "日志"
+    },
+    "e100": {
+      "role": "img"
+    },
+    "e103": {
+      "role": "generic"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e106": {
+      "role": "generic"
+    },
+    "e108": {
+      "role": "link",
+      "name": "文档"
+    },
+    "e110": {
+      "role": "img"
+    },
+    "e112": {
+      "role": "generic"
+    },
+    "e113": {
+      "role": "main"
+    },
+    "e114": {
+      "role": "generic"
+    },
+    "e115": {
+      "role": "generic"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e117": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "generic"
+    },
+    "e121": {
+      "role": "combobox"
+    },
+    "e122": {
+      "role": "button",
+      "name": "刷新聊天数据"
+    },
+    "e123": {
+      "role": "img"
+    },
+    "e126": {
+      "role": "generic"
+    },
+    "e127": {
+      "role": "button",
+      "name": "切换助手思考/工作输出"
+    },
+    "e128": {
+      "role": "img"
+    },
+    "e138": {
+      "role": "button",
+      "name": "切换专注模式 (隐藏侧边栏 + 页面页眉)"
+    },
+    "e139": {
+      "role": "img"
+    },
+    "e145": {
+      "role": "button",
+      "name": "显示定时任务会话"
+    },
+    "e147": {
+      "role": "img"
+    },
+    "e150": {
+      "role": "generic"
+    },
+    "e153": {
+      "role": "log"
+    },
+    "e155": {
+      "role": "generic"
+    },
+    "e157": {
+      "role": "textbox"
+    },
+    "e158": {
+      "role": "generic"
+    },
+    "e159": {
+      "role": "button",
+      "name": "New session"
+    },
+    "e160": {
+      "role": "button",
+      "name": "Send ↵"
+    },
+    "e161": {
+      "role": "generic"
+    }
+  }
+}

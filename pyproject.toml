@@ -1,0 +1,25 @@
+[project]
+name = "market-echo"
+version = "0.1.0"
+description = "OpenClaw trading recap assistant V1 data service"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116.0,<1.0.0",
+  "uvicorn[standard]>=0.35.0,<1.0.0",
+  "httpx>=0.28.0,<1.0.0",
+  "pydantic>=2.11.0,<3.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4.0,<9.0.0"
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

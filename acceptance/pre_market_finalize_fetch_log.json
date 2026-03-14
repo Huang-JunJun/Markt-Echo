@@ -1,0 +1,132 @@
+{
+  "ts": "2026-03-11T08:22:31.289756+00:00",
+  "mode": "fetch",
+  "ok": true,
+  "base_url": "http://127.0.0.1:8000",
+  "use_mock": true,
+  "report_id": "pre_market-2026-03-11-f25e7bdec0",
+  "trade_date": "2026-03-11",
+  "summary_data": {
+    "index_futures": [
+      {
+        "name": "沪深300主连",
+        "value": 3658.2,
+        "change_pct": 0.34
+      },
+      {
+        "name": "中证500主连",
+        "value": 5661.7,
+        "change_pct": -0.11
+      }
+    ],
+    "overseas_market": [
+      {
+        "name": "NASDAQ",
+        "value": 18420.7,
+        "change_pct": 0.63
+      },
+      {
+        "name": "S&P 500",
+        "value": 5342.9,
+        "change_pct": 0.39
+      }
+    ],
+    "macro_events": [
+      "今日 10:00 公布社融数据",
+      "今晚 20:30 美国 CPI 数据"
+    ],
+    "watchlist": [
+      "AI算力",
+      "机器人",
+      "低空经济"
+    ],
+    "sentiment_score": 63.0
+  },
+  "warnings": [],
+  "pre_market_api_response": {
+    "ok": true,
+    "data": {
+      "report_id": "pre_market-2026-03-11-f25e7bdec0",
+      "report_type": "pre_market",
+      "trade_date": "2026-03-11",
+      "generated_at": "2026-03-11T16:22:31.284084+08:00",
+      "summary_data": {
+        "index_futures": [
+          {
+            "name": "沪深300主连",
+            "value": 3658.2,
+            "change_pct": 0.34
+          },
+          {
+            "name": "中证500主连",
+            "value": 5661.7,
+            "change_pct": -0.11
+          }
+        ],
+        "overseas_market": [
+          {
+            "name": "NASDAQ",
+            "value": 18420.7,
+            "change_pct": 0.63
+          },
+          {
+            "name": "S&P 500",
+            "value": 5342.9,
+            "change_pct": 0.39
+          }
+        ],
+        "macro_events": [
+          "今日 10:00 公布社融数据",
+          "今晚 20:30 美国 CPI 数据"
+        ],
+        "watchlist": [
+          "AI算力",
+          "机器人",
+          "低空经济"
+        ],
+        "sentiment_score": 63.0
+      },
+      "raw_data": {
+        "index_futures": [
+          {
+            "name": "沪深300主连",
+            "value": 3658.2,
+            "change_pct": 0.34
+          },
+          {
+            "name": "中证500主连",
+            "value": 5661.7,
+            "change_pct": -0.11
+          }
+        ],
+        "overseas_market": [
+          {
+            "name": "NASDAQ",
+            "value": 18420.7,
+            "change_pct": 0.63
+          },
+          {
+            "name": "S&P 500",
+            "value": 5342.9,
+            "change_pct": 0.39
+          }
+        ],
+        "macro_events": [
+          "今日 10:00 公布社融数据",
+          "今晚 20:30 美国 CPI 数据"
+        ],
+        "watchlist": [
+          "AI算力",
+          "机器人",
+          "低空经济",
+          "机器人"
+        ],
+        "sentiment_score": 63.0
+      },
+      "warnings": [],
+      "status": "SUCCESS",
+      "source": "mock"
+    },
+    "error": null
+  }
+}

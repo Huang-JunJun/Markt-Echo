@@ -1,0 +1,13 @@
+{
+  "ts": "2026-03-11T07:34:27.951191+00:00",
+  "mode": "writeback",
+  "ok": true,
+  "base_url": "http://127.0.0.1:8000",
+  "use_mock": true,
+  "report_id": "pre_market-2026-03-11-edc565428c",
+  "writeback_response": {
+    "ok": true,
+    "report_id": "pre_market-2026-03-11-edc565428c",
+    "status": "SUCCESS"
+  }
+}

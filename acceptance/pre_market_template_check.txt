@@ -1,0 +1,1 @@
+Template check passed: headings match V1 pre-market template exactly.

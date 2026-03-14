@@ -1,0 +1,2652 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "2D613B0D5A6A48B9B42AD3251BF4ACCB",
+  "url": "http://127.0.0.1:18789/chat?session=main",
+  "snapshot": "- generic [ref=e3]:\n  - banner [ref=e4]:\n    - generic [ref=e5]:\n      - button \"折叠侧边栏\" [ref=e6] [cursor=pointer]:\n        - img [ref=e8]\n      - generic [ref=e9]:\n        - img \"OpenClaw\" [ref=e11]\n        - generic [ref=e12]:\n          - generic [ref=e13]: OPENCLAW\n          - generic [ref=e14]: Gateway Dashboard\n    - generic [ref=e15]:\n      - generic [ref=e16]:\n        - generic [ref=e18]: 版本\n        - generic [ref=e19]: 2026.3.7\n      - generic [ref=e20]:\n        - generic [ref=e22]: 健康状况\n        - generic [ref=e23]: 正常\n      - group \"Theme\" [ref=e25]:\n        - button \"System theme\" [pressed] [ref=e27] [cursor=pointer]:\n          - img [ref=e28]\n        - button \"Light theme\" [ref=e30] [cursor=pointer]:\n          - img [ref=e31]\n        - button \"Dark theme\" [ref=e37] [cursor=pointer]:\n          - img [ref=e38]\n  - complementary [ref=e40]:\n    - generic [ref=e41]:\n      - button \"聊天 −\" [expanded] [ref=e42] [cursor=pointer]:\n        - generic [ref=e43]: 聊天\n        - generic [ref=e44]: −\n      - link \"聊天\" [ref=e46] [cursor=pointer]:\n        - /url: /chat\n        - img [ref=e48]\n        - generic [ref=e50]: 聊天\n    - generic [ref=e51]:\n      - button \"控制 −\" [expanded] [ref=e52] [cursor=pointer]:\n        - generic [ref=e53]: 控制\n        - generic [ref=e54]: −\n      - generic [ref=e55]:\n        - link \"概览\" [ref=e56] [cursor=pointer]:\n          - /url: /overview\n          - img [ref=e58]\n          - generic [ref=e59]: 概览\n        - link \"频道\" [ref=e60] [cursor=pointer]:\n          - /url: /channels\n          - img [ref=e62]\n          - generic [ref=e65]: 频道\n        - link \"实例\" [ref=e66] [cursor=pointer]:\n          - /url: /instances\n          - img [ref=e68]\n          - generic [ref=e71]: 实例\n        - link \"会话\" [ref=e72] [cursor=pointer]:\n          - /url: /sessions\n          - img [ref=e74]\n          - generic [ref=e77]: 会话\n        - link \"使用情况\" [ref=e78] [cursor=pointer]:\n          - /url: /usage\n          - img [ref=e80]\n          - generic [ref=e81]: 使用情况\n        - link \"定时任务\" [ref=e82] [cursor=pointer]:\n          - /url: /cron\n          - img [ref=e84]\n          - generic [ref=e89]: 定时任务\n    - generic [ref=e90]:\n      - button \"代理 −\" [expanded] [ref=e91] [cursor=pointer]:\n        - generic [ref=e92]: 代理\n        - generic [ref=e93]: −\n      - generic [ref=e94]:\n        - link \"代理\" [ref=e95] [cursor=pointer]:\n          - /url: /agents\n          - img [ref=e97]\n          - generic [ref=e99]: 代理\n        - link \"技能\" [ref=e100] [cursor=pointer]:\n          - /url: /skills\n          - img [ref=e102]\n          - generic [ref=e104]: 技能\n        - link \"节点\" [ref=e105] [cursor=pointer]:\n          - /url: /nodes\n          - img [ref=e107]\n          - generic [ref=e109]: 节点\n    - generic [ref=e110]:\n      - button \"设置 −\" [expanded] [ref=e111] [cursor=pointer]:\n        - generic [ref=e112]: 设置\n        - generic [ref=e113]: −\n      - generic [ref=e114]:\n        - link \"配置\" [ref=e115] [cursor=pointer]:\n          - /url: /config\n          - img [ref=e117]\n          - generic [ref=e120]: 配置\n        - link \"调试\" [ref=e121] [cursor=pointer]:\n          - /url: /debug\n          - img [ref=e123]\n          - generic [ref=e132]: 调试\n        - link \"日志\" [ref=e133] [cursor=pointer]:\n          - /url: /logs\n          - img [ref=e135]\n          - generic [ref=e138]: 日志\n    - generic [ref=e139]:\n      - generic [ref=e141]: 资源\n      - link \"文档\" [ref=e143] [cursor=pointer]:\n        - /url: https://docs.openclaw.ai\n        - img [ref=e145]\n        - generic [ref=e147]: 文档\n  - main [ref=e148]:\n    - generic [ref=e149]:\n      - generic [ref=e150]:\n        - generic [ref=e151]: 聊天\n        - generic [ref=e152]: 用于快速干预的直接网关聊天会话。\n      - generic [ref=e154]:\n        - combobox [ref=e156] [cursor=pointer]:\n          - option \"HuangJunJun的MacBook Pro\" [selected]\n        - button \"刷新聊天数据\" [ref=e157] [cursor=pointer]:\n          - img [ref=e158]\n        - generic [ref=e161]: \"|\"\n        - button \"切换助手思考/工作输出\" [pressed] [ref=e162] [cursor=pointer]:\n          - img [ref=e163]\n        - button \"切换专注模式 (隐藏侧边栏 + 页面页眉)\" [ref=e173] [cursor=pointer]:\n          - img [ref=e174]\n        - button \"显示定时任务会话\" [pressed] [ref=e180] [cursor=pointer]:\n          - img [ref=e182]\n    - generic [ref=e185]:\n      - log [ref=e188]:\n        - generic [ref=e189]:\n          - generic [ref=e190]: U\n          - generic [ref=e191]:\n            - generic [ref=e193]:\n              - paragraph [ref=e194]: \"System: [2026-03-11 02:49:31 GMT+8] Node: HuangJunJun的MacBook Pro (172.16.14.37) · app 2026.3.2 (2026030290) · mode local\"\n              - paragraph [ref=e195]: \"[Wed 2026-03-11 09:30 GMT+8] 修改你的思考方式为think high\"\n            - generic [ref=e196]:\n              - generic [ref=e197]: openclaw-tui (gateway-client)\n              - generic [ref=e198]: 9:30\n        - generic [ref=e199]:\n          - generic [ref=e200]: A\n          - generic [ref=e201]:\n            - generic [ref=e202]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - paragraph [ref=e204]:\n                - text: 好的，已切到\n                - strong [ref=e205]: think high\n                - text: 风格来处理你的后续请求。\n                - text: （如果你是想改运行时的“Reasoning/思考级别”开关，我也可以一步步告诉你在 TUI 里怎么切。）\n            - generic [ref=e206]:\n              - generic [ref=e207]: Assistant\n              - generic [ref=e208]: 9:30\n        - generic [ref=e209]:\n          - generic [ref=e210]: U\n          - generic [ref=e211]:\n            - paragraph [ref=e214]: 告诉我怎么切\n            - generic [ref=e215]:\n              - generic [ref=e216]: openclaw-tui (gateway-client)\n              - generic [ref=e217]: 9:31\n        - generic [ref=e218]:\n          - generic [ref=e219]: A\n          - generic [ref=e220]:\n            - generic [ref=e221]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - generic [ref=e222]:\n                - paragraph [ref=e223]: 可以，最直接这样切：\n                - list [ref=e224]:\n                  - listitem [ref=e225]:\n                    - paragraph [ref=e226]:\n                      - text: 在 OpenClaw TUI 里输入：\n                      - code [ref=e227]: /reasoning\n                    - list [ref=e228]:\n                      - listitem [ref=e229]: 这是开关命令，执行一次会切换状态（关→开，开→关）。\n                  - listitem [ref=e230]:\n                    - paragraph [ref=e231]:\n                      - text: 再输入：\n                      - code [ref=e232]: /status\n                    - list [ref=e233]:\n                      - listitem [ref=e234]:\n                        - text: 看状态卡里的\n                        - strong [ref=e235]: Reasoning\n                        - text: 字段，确认是否已开启。\n                      - listitem [ref=e236]:\n                        - text: 开启后就是更偏\n                        - strong [ref=e237]: think high\n                        - text: 的推理模式。\n                - paragraph [ref=e238]: 如果你愿意，我也可以给你一套“日常默认高思考、临时降级省成本”的切换习惯。\n            - generic [ref=e239]:\n              - generic [ref=e240]: Assistant\n              - generic [ref=e241]: 9:31\n        - generic [ref=e242]:\n          - generic [ref=e243]: U\n          - generic [ref=e244]:\n            - paragraph [ref=e247]: 现在是什么思考模式\n            - generic [ref=e248]:\n              - generic [ref=e249]: openclaw-tui (gateway-client)\n              - generic [ref=e250]: 9:32\n        - generic [ref=e251]:\n          - generic [ref=e252]: A\n          - generic [ref=e253]:\n            - button \"Session Status Completed\" [ref=e255] [cursor=pointer]:\n              - generic [ref=e256]:\n                - generic [ref=e257]:\n                  - img [ref=e259]\n                  - generic [ref=e261]: Session Status\n                - img [ref=e263]\n              - generic [ref=e265]: Completed\n            - generic [ref=e266]:\n              - generic [ref=e267]: Assistant\n              - generic [ref=e268]: 9:32\n        - generic [ref=e269]:\n          - generic [ref=e270]: ⚙\n          - generic [ref=e271]:\n            - generic [ref=e272]:\n              - paragraph [ref=e274]:\n                - text: 🦞 OpenClaw 2026.3.7 (42a1394)\n                - text: \"🕒 Time: Wednesday, March 11th, 2026 — 9:33 AM (Asia/Shanghai)\"\n                - text: \"🧠 Model: openai-codex/gpt-5.3-codex · 🔑 oauth (openai-codex:default)\"\n                - text: \"🧮 Tokens: 244 in / 217 out\"\n                - text: \"🗄️ Cache: 98% hit · 12k cached, 0 new\"\n                - text: \"📚 Context: 12k/272k (4%) · 🧹 Compactions: 0\"\n                - text: \"📊 Usage: 5h 100% left ⏱4h 57m · Week 100% left ⏱6d 5h\"\n                - text: \"🧵 Session: agent:main:main • updated just now\"\n                - text: \"⚙️ Runtime: direct · Think: high · elevated\"\n                - text: \"🪢 Queue: collect (depth 0)\"\n              - 'button \"Session Status View 🦞 OpenClaw 2026.3.7 (42a1394) 🕒 Time: Wednesday, March 11th, 2026 — 9:33 AM (Asia/Shanghai)…\" [ref=e275] [cursor=pointer]':\n                - generic [ref=e276]:\n                  - generic [ref=e277]:\n                    - img [ref=e279]\n                    - generic [ref=e281]: Session Status\n                  - generic [ref=e282]:\n                    - text: View\n                    - img [ref=e283]\n                - generic [ref=e285]: \"🦞 OpenClaw 2026.3.7 (42a1394) 🕒 Time: Wednesday, March 11th, 2026 — 9:33 AM (Asia/Shanghai)…\"\n            - generic [ref=e286]:\n              - generic [ref=e287]: tool\n              - generic [ref=e288]: 9:33\n        - generic [ref=e289]:\n          - generic [ref=e290]: A\n          - generic [ref=e291]:\n            - generic [ref=e292]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - paragraph [ref=e294]:\n                - text: 现在是：\n                - strong [ref=e295]: \"Think: high\"\n                - text: （已开启高思考模式）。\n                - text: 另外当前状态里也显示是\n                - strong [ref=e296]: elevated\n                - text: 。\n            - generic [ref=e297]:\n              - generic [ref=e298]: Assistant\n              - generic [ref=e299]: 9:33\n        - generic [ref=e300]:\n          - generic [ref=e301]: U\n          - generic [ref=e302]:\n            - paragraph [ref=e305]: 现在我的电脑符合运行python的环境吗\n            - generic [ref=e306]:\n              - generic [ref=e307]: openclaw-tui (gateway-client)\n              - generic [ref=e308]: 9:42\n        - generic [ref=e309]:\n          - generic [ref=e310]: A\n          - generic [ref=e311]:\n            - button \"Exec with set -e if command -v python3 >/dev/null 2>&1; then echo \\\"python3_path=$(command -v python3)\\\" python3 --version else ech… (in /Users/huangjunjun/.openclaw/workspace) Completed\" [ref=e313] [cursor=pointer]:\n              - generic [ref=e314]:\n                - generic [ref=e315]:\n                  - img [ref=e317]\n                  - generic [ref=e319]: Exec\n                - img [ref=e321]\n              - generic [ref=e323]: with set -e if command -v python3 >/dev/null 2>&1; then echo \"python3_path=$(command -v python3)\" python3 --version else ech… (in /Users/huangjunjun/.openclaw/workspace)\n              - generic [ref=e324]: Completed\n            - generic [ref=e325]:\n              - generic [ref=e326]: Assistant\n              - generic [ref=e327]: 9:42\n        - generic [ref=e328]:\n          - generic [ref=e329]: ⚙\n          - generic [ref=e330]:\n            - generic [ref=e331]:\n              - paragraph [ref=e333]:\n                - text: python3_path=/usr/bin/python3\n                - text: Python 3.9.6\n                - text: pip3_path=/usr/bin/pip3\n                - text: pip 21.2.4 from /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/pip (python 3.9)\n                - text: python_not_found\n              - button \"Exec View python3_path=/usr/bin/python3 Python 3.9.6…\" [ref=e334] [cursor=pointer]:\n                - generic [ref=e335]:\n                  - generic [ref=e336]:\n                    - img [ref=e338]\n                    - generic [ref=e340]: Exec\n                  - generic [ref=e341]:\n                    - text: View\n                    - img [ref=e342]\n                - generic [ref=e344]: python3_path=/usr/bin/python3 Python 3.9.6…\n            - generic [ref=e345]:\n              - generic [ref=e346]: tool\n              - generic [ref=e347]: 9:42\n        - generic [ref=e348]:\n          - generic [ref=e349]: A\n          - generic [ref=e350]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import sys, venv print(''ok_run_python'', sys.version.split()[0]) print(''venv_available'', hasattr(venv, …` Completed\" [ref=e352] [cursor=pointer]':\n              - generic [ref=e353]:\n                - generic [ref=e354]:\n                  - img [ref=e356]\n                  - generic [ref=e358]: Exec\n                - img [ref=e360]\n              - generic [ref=e362]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import sys, venv print('ok_run_python', sys.version.split()[0]) print('venv_available', hasattr(venv, …`\"\n              - generic [ref=e363]: Completed\n            - generic [ref=e364]:\n              - generic [ref=e365]: Assistant\n              - generic [ref=e366]: 9:42\n        - generic [ref=e367]:\n          - generic [ref=e368]: ⚙\n          - generic [ref=e369]:\n            - generic [ref=e370]:\n              - paragraph [ref=e372]:\n                - text: ok_run_python 3.9.6\n                - text: venv_available True\n              - button \"Exec View ok_run_python 3.9.6 venv_available True\" [ref=e373] [cursor=pointer]:\n                - generic [ref=e374]:\n                  - generic [ref=e375]:\n                    - img [ref=e377]\n                    - generic [ref=e379]: Exec\n                  - generic [ref=e380]:\n                    - text: View\n                    - img [ref=e381]\n                - generic [ref=e383]: ok_run_python 3.9.6 venv_available True\n            - generic [ref=e384]:\n              - generic [ref=e385]: tool\n              - generic [ref=e386]: 9:42\n        - generic [ref=e387]:\n          - generic [ref=e388]: A\n          - generic [ref=e389]:\n            - generic [ref=e390]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - generic [ref=e391]:\n                - paragraph [ref=e392]:\n                  - text: 可以，\n                  - strong [ref=e393]: 目前你的电脑是能跑 Python 的\n                  - text: 。我刚帮你检查到：\n                - list [ref=e394]:\n                  - listitem [ref=e395]:\n                    - code [ref=e396]: python3\n                    - text: 存在：\n                    - code [ref=e397]: /usr/bin/python3\n                  - listitem [ref=e398]:\n                    - text: 版本：\n                    - code [ref=e399]: Python 3.9.6\n                  - listitem [ref=e400]:\n                    - code [ref=e401]: pip3\n                    - text: 存在：\n                    - code [ref=e402]: /usr/bin/pip3\n                  - listitem [ref=e403]:\n                    - code [ref=e404]: venv\n                    - text: 可用（可以创建虚拟环境）\n                  - listitem [ref=e405]:\n                    - text: 但\n                    - code [ref=e406]: python\n                    - text: 命令不存在（要用\n                    - code [ref=e407]: python3\n                    - text: ）\n                - paragraph [ref=e408]:\n                  - text: 所以日常运行脚本没问题。\n                  - text: 如果你的项目要求\n                  - strong [ref=e409]: Python 3.10/3.11+\n                  - text: ，那就需要再升级一个新版本。\n            - generic [ref=e410]:\n              - generic [ref=e411]: Assistant\n              - generic [ref=e412]: 9:42\n        - generic [ref=e413]:\n          - generic [ref=e414]: U\n          - generic [ref=e415]:\n            - paragraph [ref=e418]: 为什么不是python是python3\n            - generic [ref=e419]:\n              - generic [ref=e420]: openclaw-tui (gateway-client)\n              - generic [ref=e421]: 9:43\n        - generic [ref=e422]:\n          - generic [ref=e423]: A\n          - generic [ref=e424]:\n            - generic [ref=e425]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - generic [ref=e426]:\n                - paragraph [ref=e427]: 这是历史兼容问题，正常现象：\n                - list [ref=e428]:\n                  - listitem [ref=e429]:\n                    - text: 以前很多系统里\n                    - code [ref=e430]: python\n                    - text: 指向\n                    - strong [ref=e431]: Python 2\n                  - listitem [ref=e432]:\n                    - text: 为了避免把旧脚本跑坏，后来大家约定把 Python 3 明确叫\n                    - code [ref=e433]: python3\n                  - listitem [ref=e434]:\n                    - text: macOS（尤其系统自带环境）通常只保证有\n                    - code [ref=e435]: python3\n                    - text: ，不一定给\n                    - code [ref=e436]: python\n                    - text: 这个别名\n                - paragraph [ref=e437]: 所以你机器上看到：\n                - list [ref=e438]:\n                  - listitem [ref=e439]:\n                    - text: ✅\n                    - code [ref=e440]: python3\n                    - text: 可用\n                  - listitem [ref=e441]:\n                    - text: ❌\n                    - code [ref=e442]: python\n                    - text: 不存在（或不默认指向 3）\n                - paragraph [ref=e443]:\n                  - text: 如果你想用\n                  - code [ref=e444]: python\n                  - text: 也能跑 3，可以自己加个 alias（仅终端习惯）：\n                - code [ref=e446]: echo 'alias python=python3' >> ~/.zshrc source ~/.zshrc\n                - paragraph [ref=e447]:\n                  - text: 但在项目脚本里，建议继续写\n                  - code [ref=e448]: python3\n                  - text: ，更稳、更不歧义。\n            - generic [ref=e449]:\n              - generic [ref=e450]: Assistant\n              - generic [ref=e451]: 9:43\n        - generic [ref=e452]:\n          - generic [ref=e453]: U\n          - generic [ref=e454]:\n            - paragraph [ref=e457]: 如何切换模型\n            - generic [ref=e458]:\n              - generic [ref=e459]: HuangJunJun的MacBook Pro (openclaw-macos)\n              - generic [ref=e460]: 10:00\n        - generic [ref=e461]:\n          - generic [ref=e462]: A\n          - generic [ref=e464]:\n            - generic [ref=e465]: Assistant\n            - generic [ref=e466]: 10:00\n        - generic [ref=e467]:\n          - generic [ref=e468]: U\n          - generic [ref=e469]:\n            - paragraph [ref=e472]: ping\n            - generic [ref=e473]:\n              - generic [ref=e474]: You\n              - generic [ref=e475]: 10:38\n        - generic [ref=e476]:\n          - generic [ref=e477]: A\n          - generic [ref=e478]:\n            - 'button \"Exec with search \\\"/model|slash|/status|reasoning|model override|session_status\\\" in /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs -> show first 80 lines `rg -n \\\"\\\\/model|slash|/status|reasoning|model override|session_status\\\" /Users/huangjunjun/.nvm/versions/node/v22.21.1/li…` Completed\" [ref=e480] [cursor=pointer]':\n              - generic [ref=e481]:\n                - generic [ref=e482]:\n                  - img [ref=e484]\n                  - generic [ref=e486]: Exec\n                - img [ref=e488]\n              - generic [ref=e490]: \"with search \\\"/model|slash|/status|reasoning|model override|session_status\\\" in /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs -> show first 80 lines `rg -n \\\"\\\\/model|slash|/status|reasoning|model override|session_status\\\" /Users/huangjunjun/.nvm/versions/node/v22.21.1/li…`\"\n              - generic [ref=e491]: Completed\n            - generic [ref=e492]:\n              - generic [ref=e493]: Assistant\n              - generic [ref=e494]: 10:38\n        - generic [ref=e495]:\n          - generic [ref=e496]: ⚙\n          - generic [ref=e497]:\n            - generic [ref=e498]:\n              - paragraph [ref=e500]: \"zsh:1: command not found: rg\"\n              - 'button \"Exec View zsh:1: command not found: rg\" [ref=e501] [cursor=pointer]':\n                - generic [ref=e502]:\n                  - generic [ref=e503]:\n                    - img [ref=e505]\n                    - generic [ref=e507]: Exec\n                  - generic [ref=e508]:\n                    - text: View\n                    - img [ref=e509]\n                - generic [ref=e511]: \"zsh:1: command not found: rg\"\n            - generic [ref=e512]:\n              - generic [ref=e513]: tool\n              - generic [ref=e514]: 10:38\n        - generic [ref=e515]:\n          - generic [ref=e516]: A\n          - generic [ref=e517]:\n            - 'button \"Exec with search \\\"/model|/status|reasoning|model override|session_status\\\" in /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs -> show first 120 lines `grep -RIn \\\"\\\\/model\\\\|/status\\\\|reasoning\\\\|model override\\\\|session_status\\\" /Users/huangjunjun/.nvm/versions/node/v22.21.1/…` Completed\" [ref=e519] [cursor=pointer]':\n              - generic [ref=e520]:\n                - generic [ref=e521]:\n                  - img [ref=e523]\n                  - generic [ref=e525]: Exec\n                - img [ref=e527]\n              - generic [ref=e529]: \"with search \\\"/model|/status|reasoning|model override|session_status\\\" in /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs -> show first 120 lines `grep -RIn \\\"\\\\/model\\\\|/status\\\\|reasoning\\\\|model override\\\\|session_status\\\" /Users/huangjunjun/.nvm/versions/node/v22.21.1/…`\"\n              - generic [ref=e530]: Completed\n            - generic [ref=e531]:\n              - generic [ref=e532]: Assistant\n              - generic [ref=e533]: 10:38\n        - generic [ref=e534]:\n          - generic [ref=e535]: ⚙\n          - generic [ref=e536]:\n            - generic [ref=e537]:\n              - paragraph [ref=e539]:\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/date-time.md:12:Provider timestamps are preserved so tools keep their native semantics (current time is available via\n                - code [ref=e540]: session_status\n                - text: ).\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/date-time.md:75:When the agent needs the current time, use the\n                - code [ref=e541]: session_status\n                - text: tool; the status\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/design/kilo-gateway-integration.md:49:- If Kilo Gateway exposes a\n                - code [ref=e542]: /models\n                - text: endpoint in the future, scanning can be added\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/design/kilo-gateway-integration.md:85:#### 2.\n                - code [ref=e543]: src/agents/model-auth.ts\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/design/kilo-gateway-integration.md:510:1.\n                - strong [ref=e544]: \"Model Catalog:\"\n                - text: If Kilo Gateway exposes a\n                - code [ref=e545]: /models\n                - text: endpoint, add scanning support similar to\n                - code [ref=e546]: scanOpenRouterModels()\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/design/kilo-gateway-integration.md:523:|\n                - code [ref=e547]: src/agents/model-auth.ts\n                - text: \"| Modify | Add\"\n                - code [ref=e548]: kilocode\n                - text: to\n                - code [ref=e549]: envMap\n                - text: \"|\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/platforms/mac/menu-bar.md:78:- Trigger non‑main session job while main idle: icon/status shows non‑main; stays stable until it finishes.\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/platforms/mac/health.md:23:- General tab gains a Health card showing: linked auth age, session-store path/count, last check time, last error/status code, and buttons for Run Health Check / Reveal Logs.\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:17:-\n                - strong [ref=e550]: Directives\n                - text: \":\"\n                - code [ref=e551]: /think\n                - text: \",\"\n                - code [ref=e552]: /verbose\n                - text: \",\"\n                - code [ref=e553]: /reasoning\n                - text: \",\"\n                - code [ref=e554]: /elevated\n                - text: \",\"\n                - code [ref=e555]: /exec\n                - text: \",\"\n                - code [ref=e556]: /model\n                - text: \",\"\n                - code [ref=e557]: /queue\n                - text: .\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:25:There are also a few\n                - strong [ref=e558]: inline shortcuts\n                - text: \"(allowlisted/authorized senders only):\"\n                - code [ref=e559]: /help\n                - text: \",\"\n                - code [ref=e560]: /commands\n                - text: \",\"\n                - code [ref=e561]: /status\n                - text: \",\"\n                - code [ref=e562]: /whoami\n                - text: (\n                - code [ref=e563]: /id\n                - text: ).\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:75:-\n                - code [ref=e564]: /status\n                - text: (show current status; includes provider usage/quota for the current model provider when available)\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:106:-\n                - code [ref=e565]: /reasoning on|off|stream\n                - text: \"(alias:\"\n                - code [ref=e566]: /reason\n                - text: ; when on, sends a separate message prefixed\n                - code [ref=e567]: \"Reasoning:\"\n                - text: ;\n                - code [ref=e568]: stream\n                - text: = Telegram draft only)\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:109:-\n                - code [ref=e569]: /model <name>\n                - text: \"(alias:\"\n                - code [ref=e570]: /models\n                - text: ; or\n                - code [ref=e571]: /<alias>\n                - text: from\n                - code [ref=e572]: agents.defaults.models.*.alias\n                - text: )\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:123:-\n                - code [ref=e573]: /new <model>\n                - text: accepts a model alias,\n                - code [ref=e574]: provider/model\n                - text: \", or a provider name (fuzzy match); if no match, the text is treated as the message body.\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:133:-\n                - code [ref=e575]: /reasoning\n                - text: (and\n                - code [ref=e576]: /verbose\n                - text: \") are risky in group settings: they may reveal internal reasoning or tool output you did not intend to expose. Prefer leaving them off, especially in group chats.\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:137: - Example:\"\n                - code [ref=e577]: hey /status\n                - text: triggers a status reply, and the remaining text continues through the normal flow.\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:138:- Currently:\"\n                - code [ref=e578]: /help\n                - text: \",\"\n                - code [ref=e579]: /commands\n                - text: \",\"\n                - code [ref=e580]: /status\n                - text: \",\"\n                - code [ref=e581]: /whoami\n                - text: (\n                - code [ref=e582]: /id\n                - text: ).\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:149:-\n                - strong [ref=e583]: Provider usage/quota\n                - text: \"(example: “Claude 80% left”) shows up in\"\n                - code [ref=e584]: /status\n                - text: for the current model provider when usage tracking is enabled.\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:151:-\n                - code [ref=e585]: /model status\n                - text: is about\n                - strong [ref=e586]: models/auth/endpoints\n                - text: \", not usage.\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:153:## Model selection (\n                - code [ref=e587]: /model\n                - text: )\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:155:\"\n                - code [ref=e588]: /model\n                - text: is implemented as a directive.\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:160:/model\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:161:/model list\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:162:/model 3\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:163:/model openai/gpt-5.2\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:164:/model opus@anthropic:default\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:165:/model status\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:170:-\n                - code [ref=e589]: /model\n                - text: and\n                - code [ref=e590]: /model list\n                - text: show a compact, numbered picker (model family + available providers).\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:171:- On Discord,\n                - code [ref=e591]: /model\n                - text: and\n                - code [ref=e592]: /models\n                - text: open an interactive picker with provider and model dropdowns plus a Submit step.\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:172:-\n                - code [ref=e593]: /model <#>\n                - text: selects from that picker (and prefers the current provider when possible).\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:173:-\n                - code [ref=e594]: /model status\n                - text: shows the detailed view, including configured provider endpoint (\n                - code [ref=e595]: baseUrl\n                - text: ) and API mode (\n                - code [ref=e596]: api\n                - text: ) when available.\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md:222: - Slack native exception: register\"\n                - code [ref=e597]: /agentstatus\n                - text: (not\n                - code [ref=e598]: /status\n                - text: ) because Slack reserves\n                - code [ref=e599]: /status\n                - text: . Text\n                - code [ref=e600]: /status\n                - text: still works in Slack messages.\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/lobster.md:339:- Thread:\"\n                - link \"https://x.com/plattenschieber/status/2014508656335770033\" [ref=e601] [cursor=pointer]:\n                  - /url: https://x.com/plattenschieber/status/2014508656335770033\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/plugin.md:205:- Include credential source/status fields when relevant, such as:\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:2:summary: \\\"Directive syntax for /think + /verbose and how they affect model reasoning\\\"\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:19: - adaptive → provider-managed adaptive reasoning budget (supported for Anthropic Claude 4.6 model family)\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:32:4. Fallback:\"\n                - code [ref=e602]: adaptive\n                - text: for Anthropic Claude 4.6 models,\n                - code [ref=e603]: low\n                - text: for other reasoning-capable models,\n                - code [ref=e604]: \"off\"\n                - text: otherwise.\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:56:## Reasoning visibility (/reasoning)\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:60:- When enabled, reasoning is sent as a\n                - strong [ref=e605]: separate message\n                - text: prefixed with\n                - code [ref=e606]: \"Reasoning:\"\n                - text: .\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:61:-\n                - code [ref=e607]: stream\n                - text: \"(Telegram only): streams reasoning into the Telegram draft bubble while the reply is generating, then sends the final answer without reasoning.\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/thinking.md:63:- Send\n                - code [ref=e608]: /reasoning\n                - text: (or\n                - code [ref=e609]: \"/reasoning:\"\n                - text: ) with no argument to see the current reasoning level.\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/llm-task.md:68:\"\n                - code [ref=e610]: allowedModels\n                - text: is an allowlist of\n                - code [ref=e611]: provider/model\n                - text: strings. If set, any request\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/acp-agents.md:28: -\"\n                - code [ref=e612]: /acp model <provider/model>\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/acp-agents.md:351:|\n                - code [ref=e613]: /acp model\n                - text: \"| Set runtime model override. |\"\n                - code [ref=e614]: /acp model anthropic/claude-opus-4-5\n                - text: \"|\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:39:-\n                - code [ref=e615]: minimal\n                - text: \":\"\n                - code [ref=e616]: session_status\n                - text: only\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:41:-\n                - code [ref=e617]: messaging\n                - text: \":\"\n                - code [ref=e618]: group:messaging\n                - text: \",\"\n                - code [ref=e619]: sessions_list\n                - text: \",\"\n                - code [ref=e620]: sessions_history\n                - text: \",\"\n                - code [ref=e621]: sessions_send\n                - text: \",\"\n                - code [ref=e622]: session_status\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:85:(or a single\n                - code [ref=e623]: provider/model\n                - text: ) without changing your global defaults.\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:91:\"\n                - code [ref=e624]: provider/model\n                - text: (e.g.\n                - code [ref=e625]: openai/gpt-5.2\n                - text: ).\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:106:Example (provider/model-specific allowlist for a flaky endpoint):\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:147:-\n                - code [ref=e626]: group:sessions\n                - text: \":\"\n                - code [ref=e627]: sessions_list\n                - text: \",\"\n                - code [ref=e628]: sessions_history\n                - text: \",\"\n                - code [ref=e629]: sessions_send\n                - text: \",\"\n                - code [ref=e630]: sessions_spawn\n                - text: \",\"\n                - code [ref=e631]: session_status\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:470:###\n                - code [ref=e632]: sessions_list\n                - text: /\n                - code [ref=e633]: sessions_history\n                - text: /\n                - code [ref=e634]: sessions_send\n                - text: /\n                - code [ref=e635]: sessions_spawn\n                - text: /\n                - code [ref=e636]: session_status\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/index.md:480:-\n                - code [ref=e637]: session_status\n                - text: \":\"\n                - code [ref=e638]: sessionKey?\n                - text: (default current; accepts\n                - code [ref=e639]: sessionId\n                - text: ),\n                - code [ref=e640]: model?\n                - text: (\n                - code [ref=e641]: default\n                - text: clears override)\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/pdf.md:36:-\n                - code [ref=e642]: model\n                - text: (\n                - code [ref=e643]: string\n                - text: \"): optional model override (\"\n                - code [ref=e644]: provider/model\n                - text: )\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/pdf.md:110:-\n                - code [ref=e645]: model\n                - text: \": resolved model ref (\"\n                - code [ref=e646]: provider/model\n                - text: )\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/multi-agent-sandbox-tools.md:223:Provider tool keys accept either\n                - code [ref=e647]: provider\n                - text: (e.g.\n                - code [ref=e648]: google-antigravity\n                - text: ) or\n                - code [ref=e649]: provider/model\n                - text: (e.g.\n                - code [ref=e650]: openai/gpt-5.2\n                - text: ).\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/multi-agent-sandbox-tools.md:231:-\n                - code [ref=e651]: group:sessions\n                - text: \":\"\n                - code [ref=e652]: sessions_list\n                - text: \",\"\n                - code [ref=e653]: sessions_history\n                - text: \",\"\n                - code [ref=e654]: sessions_send\n                - text: \",\"\n                - code [ref=e655]: sessions_spawn\n                - text: \",\"\n                - code [ref=e656]: session_status\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/multi-agent-sandbox-tools.md:328: \\\"allow\\\": [\\\"sessions_list\\\", \\\"sessions_send\\\", \\\"sessions_history\\\", \\\"session_status\\\"],\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/install/docker.md:588:- Default allow:\"\n                - code [ref=e657]: exec\n                - text: \",\"\n                - code [ref=e658]: process\n                - text: \",\"\n                - code [ref=e659]: read\n                - text: \",\"\n                - code [ref=e660]: write\n                - text: \",\"\n                - code [ref=e661]: edit\n                - text: \",\"\n                - code [ref=e662]: sessions_list\n                - text: \",\"\n                - code [ref=e663]: sessions_history\n                - text: \",\"\n                - code [ref=e664]: sessions_send\n                - text: \",\"\n                - code [ref=e665]: sessions_spawn\n                - text: \",\"\n                - code [ref=e666]: session_status\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/install/docker.md:657: \\\"session_status\\\",\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/docs.json:503: \\\"source\\\": \\\"/model-failover\\\",\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/docs.json:504: \\\"destination\\\": \\\"/concepts/model-failover\\\"\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/docs.json:507: \\\"source\\\": \\\"/model\\\",\"\n                - text: \"/Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/docs.json:508: \\\"destination\\\": \\\"/models\\\"\"\n                - text: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/docs.\n                - text: ...(truncated)...\n              - button \"Exec View /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/date-time.md:12:Provid…\" [ref=e667] [cursor=pointer]:\n                - generic [ref=e668]:\n                  - generic [ref=e669]:\n                    - img [ref=e671]\n                    - generic [ref=e673]: Exec\n                  - generic [ref=e674]:\n                    - text: View\n                    - img [ref=e675]\n                - generic [ref=e677]: /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/date-time.md:12:Provid…\n            - generic [ref=e678]:\n              - generic [ref=e679]: tool\n              - generic [ref=e680]: 10:38\n        - generic [ref=e681]:\n          - generic [ref=e682]: A\n          - generic [ref=e683]:\n            - button \"Read with lines 145-204 from /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md Completed\" [ref=e685] [cursor=pointer]:\n              - generic [ref=e686]:\n                - generic [ref=e687]:\n                  - img [ref=e689]\n                  - generic [ref=e692]: Read\n                - img [ref=e694]\n              - generic [ref=e696]: with lines 145-204 from /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md\n              - generic [ref=e697]: Completed\n            - generic [ref=e698]:\n              - generic [ref=e699]: Assistant\n              - generic [ref=e700]: 10:38\n        - generic [ref=e701]:\n          - generic [ref=e702]: ⚙\n          - generic [ref=e703]:\n            - generic [ref=e704]:\n              - generic [ref=e705]:\n                - list [ref=e706]:\n                  - listitem [ref=e707]:\n                    - strong [ref=e708]: \"Native command arguments:\"\n                    - text: Discord uses autocomplete for dynamic options (and button menus when you omit required args). Telegram and Slack show a button menu when a command supports choices and you omit the arg.\n                - heading \"Usage surfaces (what shows where)\" [level=2] [ref=e709]\n                - list [ref=e710]:\n                  - listitem [ref=e711]:\n                    - strong [ref=e712]: Provider usage/quota\n                    - text: \"(example: “Claude 80% left”) shows up in\"\n                    - code [ref=e713]: /status\n                    - text: for the current model provider when usage tracking is enabled.\n                  - listitem [ref=e714]:\n                    - strong [ref=e715]: Per-response tokens/cost\n                    - text: is controlled by\n                    - code [ref=e716]: /usage off|tokens|full\n                    - text: (appended to normal replies).\n                  - listitem [ref=e717]:\n                    - code [ref=e718]: /model status\n                    - text: is about\n                    - strong [ref=e719]: models/auth/endpoints\n                    - text: \", not usage.\"\n                - heading \"Model selection (/model)\" [level=2] [ref=e720]:\n                  - text: Model selection (\n                  - code [ref=e721]: /model\n                  - text: )\n                - paragraph [ref=e722]:\n                  - code [ref=e723]: /model\n                  - text: is implemented as a directive.\n                - paragraph [ref=e724]: \"Examples:\"\n                - code [ref=e726]: /model /model list /model 3 /model openai/gpt-5.2 /model opus@anthropic:default /model status\n                - paragraph [ref=e727]: \"Notes:\"\n                - list [ref=e728]:\n                  - listitem [ref=e729]:\n                    - code [ref=e730]: /model\n                    - text: and\n                    - code [ref=e731]: /model list\n                    - text: show a compact, numbered picker (model family + available providers).\n                  - listitem [ref=e732]:\n                    - text: On Discord,\n                    - code [ref=e733]: /model\n                    - text: and\n                    - code [ref=e734]: /models\n                    - text: open an interactive picker with provider and model dropdowns plus a Submit step.\n                  - listitem [ref=e735]:\n                    - code [ref=e736]: /model <#>\n                    - text: selects from that picker (and prefers the current provider when possible).\n                  - listitem [ref=e737]:\n                    - code [ref=e738]: /model status\n                    - text: shows the detailed view, including configured provider endpoint (\n                    - code [ref=e739]: baseUrl\n                    - text: ) and API mode (\n                    - code [ref=e740]: api\n                    - text: ) when available.\n                - heading \"Debug overrides\" [level=2] [ref=e741]\n                - paragraph [ref=e742]:\n                  - code [ref=e743]: /debug\n                  - text: lets you set\n                  - strong [ref=e744]: runtime-only\n                  - text: config overrides (memory, not disk). Owner-only. Disabled by default; enable with\n                  - code [ref=e745]: \"commands.debug: true\"\n                  - text: .\n                - paragraph [ref=e746]: \"Examples:\"\n                - code [ref=e748]: /debug show /debug set messages.responsePrefix=\"[openclaw]\" /debug set channels.whatsapp.allowFrom=[\"+1555\",\"+4477\"] /debug unset messages.responsePrefix /debug reset\n                - paragraph [ref=e749]: \"Notes:\"\n                - list [ref=e750]:\n                  - listitem [ref=e751]:\n                    - text: Overrides apply immediately to new config reads, but do\n                    - strong [ref=e752]: not\n                    - text: write to\n                    - code [ref=e753]: openclaw.json\n                    - text: .\n                  - listitem [ref=e754]:\n                    - text: Use\n                    - code [ref=e755]: /debug reset\n                    - text: to clear all overrides and return to the on-disk config.\n                - heading \"Config updates\" [level=2] [ref=e756]\n                - paragraph [ref=e757]:\n                  - code [ref=e758]: /config\n                  - text: writes to your on-disk config (\n                  - code [ref=e759]: openclaw.json\n                  - text: ). Owner-only. Disabled by default; enable with\n                  - code [ref=e760]: \"commands.config: true\"\n                  - text: .\n                - paragraph [ref=e761]: \"Examples:\"\n                - code [ref=e763]: /config show /config show messages.responsePrefix /config get messages.responsePrefix /config set messages.responsePrefix=\"[openclaw]\" [19 more lines in file. Use offset=205 to continue.]\n              - button \"Read View - **Native command arguments:** Discord uses autocomplete for dynamic options (and button menus when…\" [ref=e764] [cursor=pointer]:\n                - generic [ref=e765]:\n                  - generic [ref=e766]:\n                    - img [ref=e768]\n                    - generic [ref=e771]: Read\n                  - generic [ref=e772]:\n                    - text: View\n                    - img [ref=e773]\n                - generic [ref=e775]: \"- **Native command arguments:** Discord uses autocomplete for dynamic options (and button menus when…\"\n            - generic [ref=e776]:\n              - generic [ref=e777]: tool\n              - generic [ref=e778]: 10:38\n        - generic [ref=e779]:\n          - generic [ref=e780]: A\n          - generic [ref=e781]:\n            - generic [ref=e782]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - generic [ref=e783]:\n                - paragraph [ref=e784]: 在 👋\n                - paragraph [ref=e785]: 你前一条问“如何切换模型”，在 TUI 里用这个就行：\n                - list [ref=e786]:\n                  - listitem [ref=e787]:\n                    - text: 查看可选模型：\n                    - code [ref=e788]: /model\n                    - text: 或\n                    - code [ref=e789]: /model list\n                  - listitem [ref=e790]:\n                    - text: 按编号切换：\n                    - code [ref=e791]: /model 3\n                  - listitem [ref=e792]:\n                    - text: 直接指定：\n                    - code [ref=e793]: /model openai/gpt-5.2\n                    - text: （示例）\n                  - listitem [ref=e794]:\n                    - text: 看当前模型状态：\n                    - code [ref=e795]: /model status\n                  - listitem [ref=e796]:\n                    - text: 再确认会话状态：\n                    - code [ref=e797]: /status\n                - paragraph [ref=e798]: 如果你愿意，我可以按你“速度优先 / 质量优先 / 省钱优先”给你推荐一套常用模型切换方案。\n            - generic [ref=e799]:\n              - generic [ref=e800]: Assistant\n              - generic [ref=e801]: 10:38\n        - generic [ref=e802]:\n          - generic [ref=e803]: U\n          - generic [ref=e804]:\n            - paragraph [ref=e807]:\n              - text: 请执行一次 pre_market 手动任务（仅盘前，不要竞价和收盘），并严格按以下步骤：1) 用 HTTP POST 调用\n              - link \"http://127.0.0.1:8000/v1/review/pre-market\" [ref=e808] [cursor=pointer]:\n                - /url: http://127.0.0.1:8000/v1/review/pre-market\n              - text: \"，body 为 {\\\"use_mock\\\": true}；2) 读取返回里的 report_id、trade_date、summary_data、warnings；3) 基于这些数据生成盘前文本，标题结构必须严格是：# 盘前复盘（trade_date）、## 1) 海内外与期指信号、## 2) 今日关键事件、## 3) 重点观察方向、## 4) 开盘前执行清单、## 数据提示；4) 把生成文本用 HTTP POST 回写到 /v1/reports/{report_id}/final-text，body 为 {\\\"final_output_text\\\": \\\"...\\\", \\\"status\\\": \\\"SUCCESS\\\"}；5) 最终仅输出一个 JSON 对象，字段必须包含：pre_market_api_response、final_text、writeback_response、report_id。不要输出任何解释性文字。\"\n            - generic [ref=e809]:\n              - generic [ref=e810]: You\n              - generic [ref=e811]: 10:39\n        - generic [ref=e812]:\n          - generic [ref=e813]: A\n          - generic [ref=e814]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import json import urllib.request import urllib.error base = ''http://127.0.0.1:8000'' # 1) pre-market c…` Completed\" [ref=e816] [cursor=pointer]':\n              - generic [ref=e817]:\n                - generic [ref=e818]:\n                  - img [ref=e820]\n                  - generic [ref=e822]: Exec\n                - img [ref=e824]\n              - generic [ref=e826]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import json import urllib.request import urllib.error base = 'http://127.0.0.1:8000' # 1) pre-market c…`\"\n              - generic [ref=e827]: Completed\n            - generic [ref=e828]:\n              - generic [ref=e829]: Assistant\n              - generic [ref=e830]: 10:39\n        - generic [ref=e831]:\n          - generic [ref=e832]: ⚙\n          - generic [ref=e833]:\n            - generic [ref=e834]:\n              - paragraph [ref=e836]: \"{\\\"pre_market_api_response\\\": {\\\"http_error\\\": 502, \\\"body\\\": \\\"\\\"}, \\\"final_text\\\": \\\"\\\", \\\"writeback_response\\\": null, \\\"report_id\\\": null}\"\n              - 'button \"Exec View {\\\"pre_market_api_response\\\": {\\\"http_error\\\": 502, \\\"body\\\": \\\"\\\"}, \\\"final_text\\\": \\\"\\\", \\\"writeback_response\\\":…\" [ref=e837] [cursor=pointer]':\n                - generic [ref=e838]:\n                  - generic [ref=e839]:\n                    - img [ref=e841]\n                    - generic [ref=e843]: Exec\n                  - generic [ref=e844]:\n                    - text: View\n                    - img [ref=e845]\n                - generic [ref=e847]: \"{\\\"pre_market_api_response\\\": {\\\"http_error\\\": 502, \\\"body\\\": \\\"\\\"}, \\\"final_text\\\": \\\"\\\", \\\"writeback_response\\\":…\"\n            - generic [ref=e848]:\n              - generic [ref=e849]: tool\n              - generic [ref=e850]: 10:40\n        - generic [ref=e851]:\n          - generic [ref=e852]: A\n          - generic [ref=e853]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import json, time, urllib.request, urllib.error url=''http://127.0.0.1:8000/v1/review/pre-market'' for i…` Completed\" [ref=e855] [cursor=pointer]':\n              - generic [ref=e856]:\n                - generic [ref=e857]:\n                  - img [ref=e859]\n                  - generic [ref=e861]: Exec\n                - img [ref=e863]\n              - generic [ref=e865]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import json, time, urllib.request, urllib.error url='http://127.0.0.1:8000/v1/review/pre-market' for i…`\"\n              - generic [ref=e866]: Completed\n            - generic [ref=e867]:\n              - generic [ref=e868]: Assistant\n              - generic [ref=e869]: 10:40\n        - generic [ref=e870]:\n          - generic [ref=e871]: ⚙\n          - generic [ref=e872]:\n            - generic [ref=e873]:\n              - paragraph [ref=e875]:\n                - text: try 1 http 502 body\n                - text: try 2 http 502 body\n                - text: try 3 http 502 body\n              - button \"Exec View try 1 http 502 body try 2 http 502 body try 3 http 502 body\" [ref=e876] [cursor=pointer]:\n                - generic [ref=e877]:\n                  - generic [ref=e878]:\n                    - img [ref=e880]\n                    - generic [ref=e882]: Exec\n                  - generic [ref=e883]:\n                    - text: View\n                    - img [ref=e884]\n                - generic [ref=e886]: try 1 http 502 body try 2 http 502 body try 3 http 502 body\n            - generic [ref=e887]:\n              - generic [ref=e888]: tool\n              - generic [ref=e889]: 10:40\n        - generic [ref=e890]:\n          - generic [ref=e891]: A\n          - generic [ref=e892]:\n            - generic [ref=e893]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - paragraph [ref=e895]: \"{\\\"pre_market_api_response\\\":{\\\"http_error\\\":502,\\\"body\\\":\\\"\\\"},\\\"final_text\\\":\\\"\\\",\\\"writeback_response\\\":null,\\\"report_id\\\":null}\"\n            - generic [ref=e896]:\n              - generic [ref=e897]: Assistant\n              - generic [ref=e898]: 10:40\n        - generic [ref=e899]:\n          - generic [ref=e900]: U\n          - generic [ref=e901]:\n            - paragraph [ref=e904]:\n              - text: 执行一个 pre_market 手动任务，只能用 exec 工具跑 shell 命令，不要用 web_fetch/http 工具。严格执行并返回 JSON：1) 运行命令：env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY -u all_proxy curl -sS -X POST\n              - link \"http://127.0.0.1:8000/v1/review/pre-market\" [ref=e905] [cursor=pointer]:\n                - /url: http://127.0.0.1:8000/v1/review/pre-market\n              - text: \"-H 'Content-Type: application/json' -d '{\\\"use_mock\\\": true}'；2) 从返回 JSON 取 report_id、trade_date、summary_data、warnings，按固定模板生成 final_text；3) 运行命令回写：env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY -u all_proxy curl -sS -X POST\"\n              - 'link \"http://127.0.0.1:8000/v1/reports/{report_id}/final-text\" [ref=e906] [cursor=pointer]':\n                - /url: http://127.0.0.1:8000/v1/reports/%7Breport_id%7D/final-text\n              - text: \"-H 'Content-Type: application/json' -d '{\\\"final_output_text\\\":\\\"<final_text>\\\",\\\"status\\\":\\\"SUCCESS\\\"}'；4) 最终只输出 JSON 对象，字段必须是 pre_market_api_response、final_text、writeback_response、report_id。\"\n            - generic [ref=e907]:\n              - generic [ref=e908]: You\n              - generic [ref=e909]: 10:41\n        - generic [ref=e910]:\n          - generic [ref=e911]: A\n          - generic [ref=e912]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import json import shlex import subprocess pre_cmd = \\\"\\\"\\\"env -u http_proxy -u https_proxy -u HTTP_PROXY…` Completed\" [ref=e914] [cursor=pointer]':\n              - generic [ref=e915]:\n                - generic [ref=e916]:\n                  - img [ref=e918]\n                  - generic [ref=e920]: Exec\n                - img [ref=e922]\n              - generic [ref=e924]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import json import shlex import subprocess pre_cmd = \\\"\\\"\\\"env -u http_proxy -u https_proxy -u HTTP_PROXY…`\"\n              - generic [ref=e925]: Completed\n            - generic [ref=e926]:\n              - generic [ref=e927]: Assistant\n              - generic [ref=e928]: 10:41\n        - generic [ref=e929]:\n          - generic [ref=e930]: ⚙\n          - generic [ref=e931]:\n            - generic [ref=e932]:\n              - paragraph [ref=e934]: \"{\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-686e4a9445\\\", \\\"report_type\\\": \\\"pre_market\\\", \\\"trade_date\\\": \\\"2026-03-11\\\", \\\"generated_at\\\": \\\"2026-03-11T10:41:48.981331+08:00\\\", \\\"summary_data\\\": {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}, \\\"raw_data\\\": {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\", \\\"机器人\\\"], \\\"sentiment_score\\\": 63.0}, \\\"warnings\\\": [], \\\"status\\\": \\\"SUCCESS\\\", \\\"source\\\": \\\"mock\\\"}, \\\"error\\\": null}, \\\"final_text\\\": \\\"# 盘前复盘（None）\\\\n\\\\n## 1) 海内外与期指信号\\\\n- 无\\\\n\\\\n## 2) 今日关键事件\\\\n- 无\\\\n\\\\n## 3) 重点观察方向\\\\n- summary_data: null\\\\n- warnings: null\\\\n\\\\n## 4) 开盘前执行清单\\\\n- 核对隔夜海外市场与期指方向是否延续\\\\n- 对照 warnings 确认风险项及应对方案\\\\n- 明确开盘前优先观察板块与个股\\\\n- 设定开盘后 5/15/30 分钟跟踪点\\\\n\\\\n## 数据提示\\\\n- summary_data: null\\\\n- warnings: null\\\", \\\"writeback_response\\\": null, \\\"report_id\\\": null}\"\n              - 'button \"Exec View {\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-686e4a9445\\\", \\\"…\" [ref=e935] [cursor=pointer]':\n                - generic [ref=e936]:\n                  - generic [ref=e937]:\n                    - img [ref=e939]\n                    - generic [ref=e941]: Exec\n                  - generic [ref=e942]:\n                    - text: View\n                    - img [ref=e943]\n                - generic [ref=e945]: \"{\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-686e4a9445\\\", \\\"…\"\n            - generic [ref=e946]:\n              - generic [ref=e947]: tool\n              - generic [ref=e948]: 10:41\n        - generic [ref=e949]:\n          - generic [ref=e950]: A\n          - generic [ref=e951]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import json import shlex import subprocess pre_cmd = \\\"\\\"\\\"env -u http_proxy -u https_proxy -u HTTP_PROXY…` Completed\" [ref=e953] [cursor=pointer]':\n              - generic [ref=e954]:\n                - generic [ref=e955]:\n                  - img [ref=e957]\n                  - generic [ref=e959]: Exec\n                - img [ref=e961]\n              - generic [ref=e963]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import json import shlex import subprocess pre_cmd = \\\"\\\"\\\"env -u http_proxy -u https_proxy -u HTTP_PROXY…`\"\n              - generic [ref=e964]: Completed\n            - generic [ref=e965]:\n              - generic [ref=e966]: Assistant\n              - generic [ref=e967]: 10:41\n        - generic [ref=e968]:\n          - generic [ref=e969]: ⚙\n          - generic [ref=e970]:\n            - generic [ref=e971]:\n              - paragraph [ref=e973]:\n                - text: \"{\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-1766b6df47\\\", \\\"report_type\\\": \\\"pre_market\\\", \\\"trade_date\\\": \\\"2026-03-11\\\", \\\"generated_at\\\": \\\"2026-03-11T10:42:18.355541+08:00\\\", \\\"summary_data\\\": {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}, \\\"raw_data\\\": {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\", \\\"机器人\\\"], \\\"sentiment_score\\\": 63.0}, \\\"warnings\\\": [], \\\"status\\\": \\\"SUCCESS\\\", \\\"source\\\": \\\"mock\\\"}, \\\"error\\\": null}, \\\"final_text\\\": \\\"# 盘前复盘（2026-03-11）\\\\n\\\\n## 1) 海内外与期指信号\\\\n\"\n                - strong [ref=e974]: 股指期货\n                - text: \"\\\\n- 沪深300主连: 3658.2（0.34%）\\\\n- 中证500主连: 5661.7（-0.11%）\\\\n\\\\n\"\n                - strong [ref=e975]: 海外市场\n                - text: \"\\\\n- NASDAQ: 18420.7（0.63%）\\\\n- S&P 500: 5342.9（0.39%）\\\\n\\\\n\"\n                - strong [ref=e976]: 情绪分\n                - text: \"\\\\n- sentiment_score: 63.0\\\\n\\\\n## 2) 今日关键事件\\\\n- 今日 10:00 公布社融数据\\\\n- 今晚 20:30 美国 CPI 数据\\\\n\\\\n## 3) 重点观察方向\\\\n- AI算力\\\\n- 机器人\\\\n- 低空经济\\\\n\\\\n## 4) 开盘前执行清单\\\\n- 核对期指与海外市场方向是否共振\\\\n- 针对宏观事件设置盘中观察时间点\\\\n- 围绕重点方向筛选 3-5 只优先观察标的\\\\n- 若 warnings 非空，优先执行风险回避动作\\\\n\\\\n## 数据提示\\\\n- summary_data: {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}\\\\n- warnings: []\\\", \\\"writeback_response\\\": {\\\"ok\\\": true, \\\"report_id\\\": \\\"pre_market-2026-03-11-1766b6df47\\\", \\\"status\\\": \\\"SUCCESS\\\"}, \\\"report_id\\\": \\\"pre_market-2026-03-11-1766b6df47\\\"}\"\n              - 'button \"Exec View {\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-1766b6df47\\\", \\\"…\" [ref=e977] [cursor=pointer]':\n                - generic [ref=e978]:\n                  - generic [ref=e979]:\n                    - img [ref=e981]\n                    - generic [ref=e983]: Exec\n                  - generic [ref=e984]:\n                    - text: View\n                    - img [ref=e985]\n                - generic [ref=e987]: \"{\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-1766b6df47\\\", \\\"…\"\n            - generic [ref=e988]:\n              - generic [ref=e989]: tool\n              - generic [ref=e990]: 10:42\n        - generic [ref=e991]:\n          - generic [ref=e992]: A\n          - generic [ref=e993]:\n            - generic [ref=e994]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - paragraph [ref=e996]:\n                - text: \"{\\\"pre_market_api_response\\\":{\\\"ok\\\":true,\\\"data\\\":{\\\"report_id\\\":\\\"pre_market-2026-03-11-1766b6df47\\\",\\\"report_type\\\":\\\"pre_market\\\",\\\"trade_date\\\":\\\"2026-03-11\\\",\\\"generated_at\\\":\\\"2026-03-11T10:42:18.355541+08:00\\\",\\\"summary_data\\\":{\\\"index_futures\\\":[{\\\"name\\\":\\\"沪深300主连\\\",\\\"value\\\":3658.2,\\\"change_pct\\\":0.34},{\\\"name\\\":\\\"中证500主连\\\",\\\"value\\\":5661.7,\\\"change_pct\\\":-0.11}],\\\"overseas_market\\\":[{\\\"name\\\":\\\"NASDAQ\\\",\\\"value\\\":18420.7,\\\"change_pct\\\":0.63},{\\\"name\\\":\\\"S&P 500\\\",\\\"value\\\":5342.9,\\\"change_pct\\\":0.39}],\\\"macro_events\\\":[\\\"今日 10:00 公布社融数据\\\",\\\"今晚 20:30 美国 CPI 数据\\\"],\\\"watchlist\\\":[\\\"AI算力\\\",\\\"机器人\\\",\\\"低空经济\\\"],\\\"sentiment_score\\\":63.0},\\\"raw_data\\\":{\\\"index_futures\\\":[{\\\"name\\\":\\\"沪深300主连\\\",\\\"value\\\":3658.2,\\\"change_pct\\\":0.34},{\\\"name\\\":\\\"中证500主连\\\",\\\"value\\\":5661.7,\\\"change_pct\\\":-0.11}],\\\"overseas_market\\\":[{\\\"name\\\":\\\"NASDAQ\\\",\\\"value\\\":18420.7,\\\"change_pct\\\":0.63},{\\\"name\\\":\\\"S&P 500\\\",\\\"value\\\":5342.9,\\\"change_pct\\\":0.39}],\\\"macro_events\\\":[\\\"今日 10:00 公布社融数据\\\",\\\"今晚 20:30 美国 CPI 数据\\\"],\\\"watchlist\\\":[\\\"AI算力\\\",\\\"机器人\\\",\\\"低空经济\\\",\\\"机器人\\\"],\\\"sentiment_score\\\":63.0},\\\"warnings\\\":[],\\\"status\\\":\\\"SUCCESS\\\",\\\"source\\\":\\\"mock\\\"},\\\"error\\\":null},\\\"final_text\\\":\\\"# 盘前复盘（2026-03-11）\\\\n\\\\n## 1) 海内外与期指信号\\\\n\"\n                - strong [ref=e997]: 股指期货\n                - text: \"\\\\n- 沪深300主连: 3658.2（0.34%）\\\\n- 中证500主连: 5661.7（-0.11%）\\\\n\\\\n\"\n                - strong [ref=e998]: 海外市场\n                - text: \"\\\\n- NASDAQ: 18420.7（0.63%）\\\\n- S&P 500: 5342.9（0.39%）\\\\n\\\\n\"\n                - strong [ref=e999]: 情绪分\n                - text: \"\\\\n- sentiment_score: 63.0\\\\n\\\\n## 2) 今日关键事件\\\\n- 今日 10:00 公布社融数据\\\\n- 今晚 20:30 美国 CPI 数据\\\\n\\\\n## 3) 重点观察方向\\\\n- AI算力\\\\n- 机器人\\\\n- 低空经济\\\\n\\\\n## 4) 开盘前执行清单\\\\n- 核对期指与海外市场方向是否共振\\\\n- 针对宏观事件设置盘中观察时间点\\\\n- 围绕重点方向筛选 3-5 只优先观察标的\\\\n- 若 warnings 非空，优先执行风险回避动作\\\\n\\\\n## 数据提示\\\\n- summary_data: {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}\\\\n- warnings: []\\\",\\\"writeback_response\\\":{\\\"ok\\\":true,\\\"report_id\\\":\\\"pre_market-2026-03-11-1766b6df47\\\",\\\"status\\\":\\\"SUCCESS\\\"},\\\"report_id\\\":\\\"pre_market-2026-03-11-1766b6df47\\\"}\"\n            - generic [ref=e1000]:\n              - generic [ref=e1001]: Assistant\n              - generic [ref=e1002]: 10:42\n        - generic [ref=e1003]:\n          - generic [ref=e1004]: U\n          - generic [ref=e1005]:\n            - paragraph [ref=e1008]: \"执行一次 pre_market 手动任务，只能用 exec 工具跑 shell。步骤：1) 调用 pre-market 接口（use_mock=true）；2) 基于返回数据生成盘前文本，标题结构必须严格是：# 盘前复盘（trade_date）、## 1) 海内外与期指信号、## 2) 今日关键事件、## 3) 重点观察方向、## 4) 开盘前执行清单、## 数据提示；3) 把 final_text 回写到 /v1/reports/{report_id}/final-text，status=SUCCESS；4) 只输出一个 JSON 对象，字段必须有 pre_market_api_response、final_text、writeback_response、report_id。\"\n            - generic [ref=e1009]:\n              - generic [ref=e1010]: You\n              - generic [ref=e1011]: 10:43\n        - generic [ref=e1012]:\n          - generic [ref=e1013]: A\n          - generic [ref=e1014]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import json import shlex import subprocess pre_cmd = \\\"\\\"\\\"env -u http_proxy -u https_proxy -u HTTP_PROXY…` Completed\" [ref=e1016] [cursor=pointer]':\n              - generic [ref=e1017]:\n                - generic [ref=e1018]:\n                  - img [ref=e1020]\n                  - generic [ref=e1022]: Exec\n                - img [ref=e1024]\n              - generic [ref=e1026]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import json import shlex import subprocess pre_cmd = \\\"\\\"\\\"env -u http_proxy -u https_proxy -u HTTP_PROXY…`\"\n              - generic [ref=e1027]: Completed\n            - generic [ref=e1028]:\n              - generic [ref=e1029]: Assistant\n              - generic [ref=e1030]: 10:43\n        - generic [ref=e1031]:\n          - generic [ref=e1032]: ⚙\n          - generic [ref=e1033]:\n            - generic [ref=e1034]:\n              - paragraph [ref=e1036]:\n                - text: \"{\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-4f6d28e688\\\", \\\"report_type\\\": \\\"pre_market\\\", \\\"trade_date\\\": \\\"2026-03-11\\\", \\\"generated_at\\\": \\\"2026-03-11T10:44:01.383308+08:00\\\", \\\"summary_data\\\": {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}, \\\"raw_data\\\": {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\", \\\"机器人\\\"], \\\"sentiment_score\\\": 63.0}, \\\"warnings\\\": [], \\\"status\\\": \\\"SUCCESS\\\", \\\"source\\\": \\\"mock\\\"}, \\\"error\\\": null}, \\\"final_text\\\": \\\"# 盘前复盘（2026-03-11）\\\\n\\\\n## 1) 海内外与期指信号\\\\n\"\n                - strong [ref=e1037]: 股指期货\n                - text: \"\\\\n- 沪深300主连: 3658.2（0.34%）\\\\n- 中证500主连: 5661.7（-0.11%）\\\\n\\\\n\"\n                - strong [ref=e1038]: 海外市场\n                - text: \"\\\\n- NASDAQ: 18420.7（0.63%）\\\\n- S&P 500: 5342.9（0.39%）\\\\n\\\\n\"\n                - strong [ref=e1039]: 市场情绪分\n                - text: \"\\\\n- 63.0\\\\n\\\\n## 2) 今日关键事件\\\\n- 今日 10:00 公布社融数据\\\\n- 今晚 20:30 美国 CPI 数据\\\\n\\\\n## 3) 重点观察方向\\\\n- AI算力\\\\n- 机器人\\\\n- 低空经济\\\\n\\\\n## 4) 开盘前执行清单\\\\n- 核对期指与海外市场方向是否一致\\\\n- 按宏观事件时间点设置盘中观察提醒\\\\n- 围绕重点方向准备候选标的与触发条件\\\\n- 根据 warnings 预设仓位与风险应对\\\\n\\\\n## 数据提示\\\\n- summary_data: {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}\\\\n- warnings: []\\\", \\\"writeback_response\\\": {\\\"ok\\\": true, \\\"report_id\\\": \\\"pre_market-2026-03-11-4f6d28e688\\\", \\\"status\\\": \\\"SUCCESS\\\"}, \\\"report_id\\\": \\\"pre_market-2026-03-11-4f6d28e688\\\"}\"\n              - 'button \"Exec View {\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-4f6d28e688\\\", \\\"…\" [ref=e1040] [cursor=pointer]':\n                - generic [ref=e1041]:\n                  - generic [ref=e1042]:\n                    - img [ref=e1044]\n                    - generic [ref=e1046]: Exec\n                  - generic [ref=e1047]:\n                    - text: View\n                    - img [ref=e1048]\n                - generic [ref=e1050]: \"{\\\"pre_market_api_response\\\": {\\\"ok\\\": true, \\\"data\\\": {\\\"report_id\\\": \\\"pre_market-2026-03-11-4f6d28e688\\\", \\\"…\"\n            - generic [ref=e1051]:\n              - generic [ref=e1052]: tool\n              - generic [ref=e1053]: 10:44\n        - generic [ref=e1054]:\n          - generic [ref=e1055]: A\n          - generic [ref=e1056]:\n            - generic [ref=e1057]:\n              - button \"Copy as markdown\":\n                - generic:\n                  - generic:\n                    - img\n                  - generic:\n                    - img\n              - paragraph [ref=e1059]:\n                - text: \"{\\\"pre_market_api_response\\\":{\\\"ok\\\":true,\\\"data\\\":{\\\"report_id\\\":\\\"pre_market-2026-03-11-4f6d28e688\\\",\\\"report_type\\\":\\\"pre_market\\\",\\\"trade_date\\\":\\\"2026-03-11\\\",\\\"generated_at\\\":\\\"2026-03-11T10:44:01.383308+08:00\\\",\\\"summary_data\\\":{\\\"index_futures\\\":[{\\\"name\\\":\\\"沪深300主连\\\",\\\"value\\\":3658.2,\\\"change_pct\\\":0.34},{\\\"name\\\":\\\"中证500主连\\\",\\\"value\\\":5661.7,\\\"change_pct\\\":-0.11}],\\\"overseas_market\\\":[{\\\"name\\\":\\\"NASDAQ\\\",\\\"value\\\":18420.7,\\\"change_pct\\\":0.63},{\\\"name\\\":\\\"S&P 500\\\",\\\"value\\\":5342.9,\\\"change_pct\\\":0.39}],\\\"macro_events\\\":[\\\"今日 10:00 公布社融数据\\\",\\\"今晚 20:30 美国 CPI 数据\\\"],\\\"watchlist\\\":[\\\"AI算力\\\",\\\"机器人\\\",\\\"低空经济\\\"],\\\"sentiment_score\\\":63.0},\\\"raw_data\\\":{\\\"index_futures\\\":[{\\\"name\\\":\\\"沪深300主连\\\",\\\"value\\\":3658.2,\\\"change_pct\\\":0.34},{\\\"name\\\":\\\"中证500主连\\\",\\\"value\\\":5661.7,\\\"change_pct\\\":-0.11}],\\\"overseas_market\\\":[{\\\"name\\\":\\\"NASDAQ\\\",\\\"value\\\":18420.7,\\\"change_pct\\\":0.63},{\\\"name\\\":\\\"S&P 500\\\",\\\"value\\\":5342.9,\\\"change_pct\\\":0.39}],\\\"macro_events\\\":[\\\"今日 10:00 公布社融数据\\\",\\\"今晚 20:30 美国 CPI 数据\\\"],\\\"watchlist\\\":[\\\"AI算力\\\",\\\"机器人\\\",\\\"低空经济\\\",\\\"机器人\\\"],\\\"sentiment_score\\\":63.0},\\\"warnings\\\":[],\\\"status\\\":\\\"SUCCESS\\\",\\\"source\\\":\\\"mock\\\"},\\\"error\\\":null},\\\"final_text\\\":\\\"# 盘前复盘（2026-03-11）\\\\n\\\\n## 1) 海内外与期指信号\\\\n\"\n                - strong [ref=e1060]: 股指期货\n                - text: \"\\\\n- 沪深300主连: 3658.2（0.34%）\\\\n- 中证500主连: 5661.7（-0.11%）\\\\n\\\\n\"\n                - strong [ref=e1061]: 海外市场\n                - text: \"\\\\n- NASDAQ: 18420.7（0.63%）\\\\n- S&P 500: 5342.9（0.39%）\\\\n\\\\n\"\n                - strong [ref=e1062]: 市场情绪分\n                - text: \"\\\\n- 63.0\\\\n\\\\n## 2) 今日关键事件\\\\n- 今日 10:00 公布社融数据\\\\n- 今晚 20:30 美国 CPI 数据\\\\n\\\\n## 3) 重点观察方向\\\\n- AI算力\\\\n- 机器人\\\\n- 低空经济\\\\n\\\\n## 4) 开盘前执行清单\\\\n- 核对期指与海外市场方向是否一致\\\\n- 按宏观事件时间点设置盘中观察提醒\\\\n- 围绕重点方向准备候选标的与触发条件\\\\n- 根据 warnings 预设仓位与风险应对\\\\n\\\\n## 数据提示\\\\n- summary_data: {\\\"index_futures\\\": [{\\\"name\\\": \\\"沪深300主连\\\", \\\"value\\\": 3658.2, \\\"change_pct\\\": 0.34}, {\\\"name\\\": \\\"中证500主连\\\", \\\"value\\\": 5661.7, \\\"change_pct\\\": -0.11}], \\\"overseas_market\\\": [{\\\"name\\\": \\\"NASDAQ\\\", \\\"value\\\": 18420.7, \\\"change_pct\\\": 0.63}, {\\\"name\\\": \\\"S&P 500\\\", \\\"value\\\": 5342.9, \\\"change_pct\\\": 0.39}], \\\"macro_events\\\": [\\\"今日 10:00 公布社融数据\\\", \\\"今晚 20:30 美国 CPI 数据\\\"], \\\"watchlist\\\": [\\\"AI算力\\\", \\\"机器人\\\", \\\"低空经济\\\"], \\\"sentiment_score\\\": 63.0}\\\\n- warnings: []\\\",\\\"writeback_response\\\":{\\\"ok\\\":true,\\\"report_id\\\":\\\"pre_market-2026-03-11-4f6d28e688\\\",\\\"status\\\":\\\"SUCCESS\\\"},\\\"report_id\\\":\\\"pre_market-2026-03-11-4f6d28e688\\\"}\"\n            - generic [ref=e1063]:\n              - generic [ref=e1064]: Assistant\n              - generic [ref=e1065]: 10:44\n        - generic [ref=e1074]:\n          - generic [ref=e1075]: U\n          - generic [ref=e1076]:\n            - paragraph [ref=e1079]:\n              - text: 执行一次 pre_market 手动任务：调用\n              - link \"http://127.0.0.1:8000/v1/review/pre-market(use_mock=true)，按盘前模板生成最终文本，再回写\" [ref=e1080] [cursor=pointer]:\n                - /url: http://127.0.0.1:8000/v1/review/pre-market(use_mock=true)%EF%BC%8C%E6%8C%89%E7%9B%98%E5%89%8D%E6%A8%A1%E6%9D%BF%E7%94%9F%E6%88%90%E6%9C%80%E7%BB%88%E6%96%87%E6%9C%AC%EF%BC%8C%E5%86%8D%E5%9B%9E%E5%86%99\n              - text: \"/v1/reports/{report_id}/final-text，最后返回 report_id 和 writeback_response。\"\n            - generic [ref=e1081]:\n              - generic [ref=e1082]: openclaw-control-ui\n              - generic [ref=e1083]: 10:46\n        - generic [ref=e1084]:\n          - generic [ref=e1085]: A\n          - generic [ref=e1086]:\n            - 'button \"Exec with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<''PY'' import json import urllib.request base=''http://127.0.0.1:8000'' # 1) pre-market req = urllib.request.Re…` Completed\" [ref=e1088] [cursor=pointer]':\n              - generic [ref=e1089]:\n                - generic [ref=e1090]:\n                  - img [ref=e1092]\n                  - generic [ref=e1094]: Exec\n                - img [ref=e1096]\n              - generic [ref=e1098]: \"with run python3 inline script (heredoc) (in /Users/huangjunjun/.openclaw/workspace) `python3 - <<'PY' import json import urllib.request base='http://127.0.0.1:8000' # 1) pre-market req = urllib.request.Re…`\"\n              - generic [ref=e1099]: Completed\n            - generic [ref=e1100]:\n              - generic [ref=e1101]: Assistant\n              - generic [ref=e1102]: 10:46\n        - generic [ref=e1103]:\n          - generic [ref=e1104]: ⚙\n          - generic [ref=e1105]:\n            - generic [ref=e1106]:\n              - generic [ref=e1107]:\n                - paragraph [ref=e1108]:\n                  - text: \"Traceback (most recent call last):\"\n                  - text: File \"<stdin>\", line 13, in <module>\n                  - text: File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 214, in urlopen\n                  - text: return opener.open(url, data, timeout)\n                  - text: File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework\n\n[...TRUNCATED - page too large]",
+  "truncated": true,
+  "refs": {
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "banner"
+    },
+    "e5": {
+      "role": "generic"
+    },
+    "e6": {
+      "role": "button",
+      "name": "折叠侧边栏"
+    },
+    "e8": {
+      "role": "img"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "img",
+      "name": "OpenClaw"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "generic"
+    },
+    "e14": {
+      "role": "generic"
+    },
+    "e15": {
+      "role": "generic"
+    },
+    "e16": {
+      "role": "generic"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "generic"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e22": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "generic"
+    },
+    "e25": {
+      "role": "group",
+      "name": "Theme"
+    },
+    "e27": {
+      "role": "button",
+      "name": "System theme"
+    },
+    "e28": {
+      "role": "img"
+    },
+    "e30": {
+      "role": "button",
+      "name": "Light theme"
+    },
+    "e31": {
+      "role": "img"
+    },
+    "e37": {
+      "role": "button",
+      "name": "Dark theme"
+    },
+    "e38": {
+      "role": "img"
+    },
+    "e40": {
+      "role": "complementary"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e42": {
+      "role": "button",
+      "name": "聊天 −"
+    },
+    "e43": {
+      "role": "generic"
+    },
+    "e44": {
+      "role": "generic"
+    },
+    "e46": {
+      "role": "link",
+      "name": "聊天"
+    },
+    "e48": {
+      "role": "img"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e52": {
+      "role": "button",
+      "name": "控制 −"
+    },
+    "e53": {
+      "role": "generic"
+    },
+    "e54": {
+      "role": "generic"
+    },
+    "e55": {
+      "role": "generic"
+    },
+    "e56": {
+      "role": "link",
+      "name": "概览"
+    },
+    "e58": {
+      "role": "img"
+    },
+    "e59": {
+      "role": "generic"
+    },
+    "e60": {
+      "role": "link",
+      "name": "频道"
+    },
+    "e62": {
+      "role": "img"
+    },
+    "e65": {
+      "role": "generic"
+    },
+    "e66": {
+      "role": "link",
+      "name": "实例"
+    },
+    "e68": {
+      "role": "img"
+    },
+    "e71": {
+      "role": "generic"
+    },
+    "e72": {
+      "role": "link",
+      "name": "会话"
+    },
+    "e74": {
+      "role": "img"
+    },
+    "e77": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "link",
+      "name": "使用情况"
+    },
+    "e80": {
+      "role": "img"
+    },
+    "e81": {
+      "role": "generic"
+    },
+    "e82": {
+      "role": "link",
+      "name": "定时任务"
+    },
+    "e84": {
+      "role": "img"
+    },
+    "e89": {
+      "role": "generic"
+    },
+    "e90": {
+      "role": "generic"
+    },
+    "e91": {
+      "role": "button",
+      "name": "代理 −"
+    },
+    "e92": {
+      "role": "generic"
+    },
+    "e93": {
+      "role": "generic"
+    },
+    "e94": {
+      "role": "generic"
+    },
+    "e95": {
+      "role": "link",
+      "name": "代理"
+    },
+    "e97": {
+      "role": "img"
+    },
+    "e99": {
+      "role": "generic"
+    },
+    "e100": {
+      "role": "link",
+      "name": "技能"
+    },
+    "e102": {
+      "role": "img"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e105": {
+      "role": "link",
+      "name": "节点"
+    },
+    "e107": {
+      "role": "img"
+    },
+    "e109": {
+      "role": "generic"
+    },
+    "e110": {
+      "role": "generic"
+    },
+    "e111": {
+      "role": "button",
+      "name": "设置 −"
+    },
+    "e112": {
+      "role": "generic"
+    },
+    "e113": {
+      "role": "generic"
+    },
+    "e114": {
+      "role": "generic"
+    },
+    "e115": {
+      "role": "link",
+      "name": "配置"
+    },
+    "e117": {
+      "role": "img"
+    },
+    "e120": {
+      "role": "generic"
+    },
+    "e121": {
+      "role": "link",
+      "name": "调试"
+    },
+    "e123": {
+      "role": "img"
+    },
+    "e132": {
+      "role": "generic"
+    },
+    "e133": {
+      "role": "link",
+      "name": "日志"
+    },
+    "e135": {
+      "role": "img"
+    },
+    "e138": {
+      "role": "generic"
+    },
+    "e139": {
+      "role": "generic"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "link",
+      "name": "文档"
+    },
+    "e145": {
+      "role": "img"
+    },
+    "e147": {
+      "role": "generic"
+    },
+    "e148": {
+      "role": "main"
+    },
+    "e149": {
+      "role": "generic"
+    },
+    "e150": {
+      "role": "generic"
+    },
+    "e151": {
+      "role": "generic"
+    },
+    "e152": {
+      "role": "generic"
+    },
+    "e154": {
+      "role": "generic"
+    },
+    "e156": {
+      "role": "combobox"
+    },
+    "e157": {
+      "role": "button",
+      "name": "刷新聊天数据"
+    },
+    "e158": {
+      "role": "img"
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e162": {
+      "role": "button",
+      "name": "切换助手思考/工作输出"
+    },
+    "e163": {
+      "role": "img"
+    },
+    "e173": {
+      "role": "button",
+      "name": "切换专注模式 (隐藏侧边栏 + 页面页眉)"
+    },
+    "e174": {
+      "role": "img"
+    },
+    "e180": {
+      "role": "button",
+      "name": "显示定时任务会话"
+    },
+    "e182": {
+      "role": "img"
+    },
+    "e185": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "log"
+    },
+    "e189": {
+      "role": "generic"
+    },
+    "e190": {
+      "role": "generic"
+    },
+    "e191": {
+      "role": "generic"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e194": {
+      "role": "paragraph"
+    },
+    "e195": {
+      "role": "paragraph"
+    },
+    "e196": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "generic"
+    },
+    "e198": {
+      "role": "generic"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "generic"
+    },
+    "e202": {
+      "role": "generic"
+    },
+    "e204": {
+      "role": "paragraph"
+    },
+    "e205": {
+      "role": "strong"
+    },
+    "e206": {
+      "role": "generic"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "generic"
+    },
+    "e209": {
+      "role": "generic"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e211": {
+      "role": "generic"
+    },
+    "e214": {
+      "role": "paragraph"
+    },
+    "e215": {
+      "role": "generic"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e217": {
+      "role": "generic"
+    },
+    "e218": {
+      "role": "generic"
+    },
+    "e219": {
+      "role": "generic"
+    },
+    "e220": {
+      "role": "generic"
+    },
+    "e221": {
+      "role": "generic"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e223": {
+      "role": "paragraph"
+    },
+    "e224": {
+      "role": "list"
+    },
+    "e225": {
+      "role": "listitem"
+    },
+    "e226": {
+      "role": "paragraph"
+    },
+    "e227": {
+      "role": "code"
+    },
+    "e228": {
+      "role": "list"
+    },
+    "e229": {
+      "role": "listitem"
+    },
+    "e230": {
+      "role": "listitem"
+    },
+    "e231": {
+      "role": "paragraph"
+    },
+    "e232": {
+      "role": "code"
+    },
+    "e233": {
+      "role": "list"
+    },
+    "e234": {
+      "role": "listitem"
+    },
+    "e235": {
+      "role": "strong"
+    },
+    "e236": {
+      "role": "listitem"
+    },
+    "e237": {
+      "role": "strong"
+    },
+    "e238": {
+      "role": "paragraph"
+    },
+    "e239": {
+      "role": "generic"
+    },
+    "e240": {
+      "role": "generic"
+    },
+    "e241": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "generic"
+    },
+    "e243": {
+      "role": "generic"
+    },
+    "e244": {
+      "role": "generic"
+    },
+    "e247": {
+      "role": "paragraph"
+    },
+    "e248": {
+      "role": "generic"
+    },
+    "e249": {
+      "role": "generic"
+    },
+    "e250": {
+      "role": "generic"
+    },
+    "e251": {
+      "role": "generic"
+    },
+    "e252": {
+      "role": "generic"
+    },
+    "e253": {
+      "role": "generic"
+    },
+    "e255": {
+      "role": "button",
+      "name": "Session Status Completed"
+    },
+    "e256": {
+      "role": "generic"
+    },
+    "e257": {
+      "role": "generic"
+    },
+    "e259": {
+      "role": "img"
+    },
+    "e261": {
+      "role": "generic"
+    },
+    "e263": {
+      "role": "img"
+    },
+    "e265": {
+      "role": "generic"
+    },
+    "e266": {
+      "role": "generic"
+    },
+    "e267": {
+      "role": "generic"
+    },
+    "e268": {
+      "role": "generic"
+    },
+    "e269": {
+      "role": "generic"
+    },
+    "e270": {
+      "role": "generic"
+    },
+    "e271": {
+      "role": "generic"
+    },
+    "e272": {
+      "role": "generic"
+    },
+    "e274": {
+      "role": "paragraph"
+    },
+    "e276": {
+      "role": "generic"
+    },
+    "e277": {
+      "role": "generic"
+    },
+    "e279": {
+      "role": "img"
+    },
+    "e281": {
+      "role": "generic"
+    },
+    "e282": {
+      "role": "generic"
+    },
+    "e283": {
+      "role": "img"
+    },
+    "e285": {
+      "role": "generic"
+    },
+    "e286": {
+      "role": "generic"
+    },
+    "e287": {
+      "role": "generic"
+    },
+    "e288": {
+      "role": "generic"
+    },
+    "e289": {
+      "role": "generic"
+    },
+    "e290": {
+      "role": "generic"
+    },
+    "e291": {
+      "role": "generic"
+    },
+    "e292": {
+      "role": "generic"
+    },
+    "e294": {
+      "role": "paragraph"
+    },
+    "e295": {
+      "role": "strong"
+    },
+    "e296": {
+      "role": "strong"
+    },
+    "e297": {
+      "role": "generic"
+    },
+    "e298": {
+      "role": "generic"
+    },
+    "e299": {
+      "role": "generic"
+    },
+    "e300": {
+      "role": "generic"
+    },
+    "e301": {
+      "role": "generic"
+    },
+    "e302": {
+      "role": "generic"
+    },
+    "e305": {
+      "role": "paragraph"
+    },
+    "e306": {
+      "role": "generic"
+    },
+    "e307": {
+      "role": "generic"
+    },
+    "e308": {
+      "role": "generic"
+    },
+    "e309": {
+      "role": "generic"
+    },
+    "e310": {
+      "role": "generic"
+    },
+    "e311": {
+      "role": "generic"
+    },
+    "e313": {
+      "role": "button",
+      "name": "Exec with set -e if command -v python3 >/dev/null 2>&1; then echo \\"
+    },
+    "e314": {
+      "role": "generic"
+    },
+    "e315": {
+      "role": "generic"
+    },
+    "e317": {
+      "role": "img"
+    },
+    "e319": {
+      "role": "generic"
+    },
+    "e321": {
+      "role": "img"
+    },
+    "e323": {
+      "role": "generic"
+    },
+    "e324": {
+      "role": "generic"
+    },
+    "e325": {
+      "role": "generic"
+    },
+    "e326": {
+      "role": "generic"
+    },
+    "e327": {
+      "role": "generic"
+    },
+    "e328": {
+      "role": "generic"
+    },
+    "e329": {
+      "role": "generic"
+    },
+    "e330": {
+      "role": "generic"
+    },
+    "e331": {
+      "role": "generic"
+    },
+    "e333": {
+      "role": "paragraph"
+    },
+    "e334": {
+      "role": "button",
+      "name": "Exec View python3_path=/usr/bin/python3 Python 3.9.6…"
+    },
+    "e335": {
+      "role": "generic"
+    },
+    "e336": {
+      "role": "generic"
+    },
+    "e338": {
+      "role": "img"
+    },
+    "e340": {
+      "role": "generic"
+    },
+    "e341": {
+      "role": "generic"
+    },
+    "e342": {
+      "role": "img"
+    },
+    "e344": {
+      "role": "generic"
+    },
+    "e345": {
+      "role": "generic"
+    },
+    "e346": {
+      "role": "generic"
+    },
+    "e347": {
+      "role": "generic"
+    },
+    "e348": {
+      "role": "generic"
+    },
+    "e349": {
+      "role": "generic"
+    },
+    "e350": {
+      "role": "generic"
+    },
+    "e353": {
+      "role": "generic"
+    },
+    "e354": {
+      "role": "generic"
+    },
+    "e356": {
+      "role": "img"
+    },
+    "e358": {
+      "role": "generic"
+    },
+    "e360": {
+      "role": "img"
+    },
+    "e362": {
+      "role": "generic"
+    },
+    "e363": {
+      "role": "generic"
+    },
+    "e364": {
+      "role": "generic"
+    },
+    "e365": {
+      "role": "generic"
+    },
+    "e366": {
+      "role": "generic"
+    },
+    "e367": {
+      "role": "generic"
+    },
+    "e368": {
+      "role": "generic"
+    },
+    "e369": {
+      "role": "generic"
+    },
+    "e370": {
+      "role": "generic"
+    },
+    "e372": {
+      "role": "paragraph"
+    },
+    "e373": {
+      "role": "button",
+      "name": "Exec View ok_run_python 3.9.6 venv_available True"
+    },
+    "e374": {
+      "role": "generic"
+    },
+    "e375": {
+      "role": "generic"
+    },
+    "e377": {
+      "role": "img"
+    },
+    "e379": {
+      "role": "generic"
+    },
+    "e380": {
+      "role": "generic"
+    },
+    "e381": {
+      "role": "img"
+    },
+    "e383": {
+      "role": "generic"
+    },
+    "e384": {
+      "role": "generic"
+    },
+    "e385": {
+      "role": "generic"
+    },
+    "e386": {
+      "role": "generic"
+    },
+    "e387": {
+      "role": "generic"
+    },
+    "e388": {
+      "role": "generic"
+    },
+    "e389": {
+      "role": "generic"
+    },
+    "e390": {
+      "role": "generic"
+    },
+    "e391": {
+      "role": "generic"
+    },
+    "e392": {
+      "role": "paragraph"
+    },
+    "e393": {
+      "role": "strong"
+    },
+    "e394": {
+      "role": "list"
+    },
+    "e395": {
+      "role": "listitem"
+    },
+    "e396": {
+      "role": "code"
+    },
+    "e397": {
+      "role": "code"
+    },
+    "e398": {
+      "role": "listitem"
+    },
+    "e399": {
+      "role": "code"
+    },
+    "e400": {
+      "role": "listitem"
+    },
+    "e401": {
+      "role": "code"
+    },
+    "e402": {
+      "role": "code"
+    },
+    "e403": {
+      "role": "listitem"
+    },
+    "e404": {
+      "role": "code"
+    },
+    "e405": {
+      "role": "listitem"
+    },
+    "e406": {
+      "role": "code"
+    },
+    "e407": {
+      "role": "code"
+    },
+    "e408": {
+      "role": "paragraph"
+    },
+    "e409": {
+      "role": "strong"
+    },
+    "e410": {
+      "role": "generic"
+    },
+    "e411": {
+      "role": "generic"
+    },
+    "e412": {
+      "role": "generic"
+    },
+    "e413": {
+      "role": "generic"
+    },
+    "e414": {
+      "role": "generic"
+    },
+    "e415": {
+      "role": "generic"
+    },
+    "e418": {
+      "role": "paragraph"
+    },
+    "e419": {
+      "role": "generic"
+    },
+    "e420": {
+      "role": "generic"
+    },
+    "e421": {
+      "role": "generic"
+    },
+    "e422": {
+      "role": "generic"
+    },
+    "e423": {
+      "role": "generic"
+    },
+    "e424": {
+      "role": "generic"
+    },
+    "e425": {
+      "role": "generic"
+    },
+    "e426": {
+      "role": "generic"
+    },
+    "e427": {
+      "role": "paragraph"
+    },
+    "e428": {
+      "role": "list"
+    },
+    "e429": {
+      "role": "listitem"
+    },
+    "e430": {
+      "role": "code"
+    },
+    "e431": {
+      "role": "strong"
+    },
+    "e432": {
+      "role": "listitem"
+    },
+    "e433": {
+      "role": "code"
+    },
+    "e434": {
+      "role": "listitem"
+    },
+    "e435": {
+      "role": "code"
+    },
+    "e436": {
+      "role": "code"
+    },
+    "e437": {
+      "role": "paragraph"
+    },
+    "e438": {
+      "role": "list"
+    },
+    "e439": {
+      "role": "listitem"
+    },
+    "e440": {
+      "role": "code"
+    },
+    "e441": {
+      "role": "listitem"
+    },
+    "e442": {
+      "role": "code"
+    },
+    "e443": {
+      "role": "paragraph"
+    },
+    "e444": {
+      "role": "code"
+    },
+    "e446": {
+      "role": "code"
+    },
+    "e447": {
+      "role": "paragraph"
+    },
+    "e448": {
+      "role": "code"
+    },
+    "e449": {
+      "role": "generic"
+    },
+    "e450": {
+      "role": "generic"
+    },
+    "e451": {
+      "role": "generic"
+    },
+    "e452": {
+      "role": "generic"
+    },
+    "e453": {
+      "role": "generic"
+    },
+    "e454": {
+      "role": "generic"
+    },
+    "e457": {
+      "role": "paragraph"
+    },
+    "e458": {
+      "role": "generic"
+    },
+    "e459": {
+      "role": "generic"
+    },
+    "e460": {
+      "role": "generic"
+    },
+    "e461": {
+      "role": "generic"
+    },
+    "e462": {
+      "role": "generic"
+    },
+    "e464": {
+      "role": "generic"
+    },
+    "e465": {
+      "role": "generic"
+    },
+    "e466": {
+      "role": "generic"
+    },
+    "e467": {
+      "role": "generic"
+    },
+    "e468": {
+      "role": "generic"
+    },
+    "e469": {
+      "role": "generic"
+    },
+    "e472": {
+      "role": "paragraph"
+    },
+    "e473": {
+      "role": "generic"
+    },
+    "e474": {
+      "role": "generic"
+    },
+    "e475": {
+      "role": "generic"
+    },
+    "e476": {
+      "role": "generic"
+    },
+    "e477": {
+      "role": "generic"
+    },
+    "e478": {
+      "role": "generic"
+    },
+    "e481": {
+      "role": "generic"
+    },
+    "e482": {
+      "role": "generic"
+    },
+    "e484": {
+      "role": "img"
+    },
+    "e486": {
+      "role": "generic"
+    },
+    "e488": {
+      "role": "img"
+    },
+    "e490": {
+      "role": "generic"
+    },
+    "e491": {
+      "role": "generic"
+    },
+    "e492": {
+      "role": "generic"
+    },
+    "e493": {
+      "role": "generic"
+    },
+    "e494": {
+      "role": "generic"
+    },
+    "e495": {
+      "role": "generic"
+    },
+    "e496": {
+      "role": "generic"
+    },
+    "e497": {
+      "role": "generic"
+    },
+    "e498": {
+      "role": "generic"
+    },
+    "e500": {
+      "role": "paragraph"
+    },
+    "e502": {
+      "role": "generic"
+    },
+    "e503": {
+      "role": "generic"
+    },
+    "e505": {
+      "role": "img"
+    },
+    "e507": {
+      "role": "generic"
+    },
+    "e508": {
+      "role": "generic"
+    },
+    "e509": {
+      "role": "img"
+    },
+    "e511": {
+      "role": "generic"
+    },
+    "e512": {
+      "role": "generic"
+    },
+    "e513": {
+      "role": "generic"
+    },
+    "e514": {
+      "role": "generic"
+    },
+    "e515": {
+      "role": "generic"
+    },
+    "e516": {
+      "role": "generic"
+    },
+    "e517": {
+      "role": "generic"
+    },
+    "e520": {
+      "role": "generic"
+    },
+    "e521": {
+      "role": "generic"
+    },
+    "e523": {
+      "role": "img"
+    },
+    "e525": {
+      "role": "generic"
+    },
+    "e527": {
+      "role": "img"
+    },
+    "e529": {
+      "role": "generic"
+    },
+    "e530": {
+      "role": "generic"
+    },
+    "e531": {
+      "role": "generic"
+    },
+    "e532": {
+      "role": "generic"
+    },
+    "e533": {
+      "role": "generic"
+    },
+    "e534": {
+      "role": "generic"
+    },
+    "e535": {
+      "role": "generic"
+    },
+    "e536": {
+      "role": "generic"
+    },
+    "e537": {
+      "role": "generic"
+    },
+    "e539": {
+      "role": "paragraph"
+    },
+    "e540": {
+      "role": "code"
+    },
+    "e541": {
+      "role": "code"
+    },
+    "e542": {
+      "role": "code"
+    },
+    "e543": {
+      "role": "code"
+    },
+    "e544": {
+      "role": "strong"
+    },
+    "e545": {
+      "role": "code"
+    },
+    "e546": {
+      "role": "code"
+    },
+    "e547": {
+      "role": "code"
+    },
+    "e548": {
+      "role": "code"
+    },
+    "e549": {
+      "role": "code"
+    },
+    "e550": {
+      "role": "strong"
+    },
+    "e551": {
+      "role": "code"
+    },
+    "e552": {
+      "role": "code"
+    },
+    "e553": {
+      "role": "code"
+    },
+    "e554": {
+      "role": "code"
+    },
+    "e555": {
+      "role": "code"
+    },
+    "e556": {
+      "role": "code"
+    },
+    "e557": {
+      "role": "code"
+    },
+    "e558": {
+      "role": "strong"
+    },
+    "e559": {
+      "role": "code"
+    },
+    "e560": {
+      "role": "code"
+    },
+    "e561": {
+      "role": "code"
+    },
+    "e562": {
+      "role": "code"
+    },
+    "e563": {
+      "role": "code"
+    },
+    "e564": {
+      "role": "code"
+    },
+    "e565": {
+      "role": "code"
+    },
+    "e566": {
+      "role": "code"
+    },
+    "e567": {
+      "role": "code"
+    },
+    "e568": {
+      "role": "code"
+    },
+    "e569": {
+      "role": "code"
+    },
+    "e570": {
+      "role": "code"
+    },
+    "e571": {
+      "role": "code"
+    },
+    "e572": {
+      "role": "code"
+    },
+    "e573": {
+      "role": "code"
+    },
+    "e574": {
+      "role": "code"
+    },
+    "e575": {
+      "role": "code"
+    },
+    "e576": {
+      "role": "code"
+    },
+    "e577": {
+      "role": "code"
+    },
+    "e578": {
+      "role": "code"
+    },
+    "e579": {
+      "role": "code"
+    },
+    "e580": {
+      "role": "code"
+    },
+    "e581": {
+      "role": "code"
+    },
+    "e582": {
+      "role": "code"
+    },
+    "e583": {
+      "role": "strong"
+    },
+    "e584": {
+      "role": "code"
+    },
+    "e585": {
+      "role": "code"
+    },
+    "e586": {
+      "role": "strong"
+    },
+    "e587": {
+      "role": "code"
+    },
+    "e588": {
+      "role": "code"
+    },
+    "e589": {
+      "role": "code"
+    },
+    "e590": {
+      "role": "code"
+    },
+    "e591": {
+      "role": "code"
+    },
+    "e592": {
+      "role": "code"
+    },
+    "e593": {
+      "role": "code"
+    },
+    "e594": {
+      "role": "code"
+    },
+    "e595": {
+      "role": "code"
+    },
+    "e596": {
+      "role": "code"
+    },
+    "e597": {
+      "role": "code"
+    },
+    "e598": {
+      "role": "code"
+    },
+    "e599": {
+      "role": "code"
+    },
+    "e600": {
+      "role": "code"
+    },
+    "e601": {
+      "role": "link",
+      "name": "https://x.com/plattenschieber/status/2014508656335770033"
+    },
+    "e602": {
+      "role": "code"
+    },
+    "e603": {
+      "role": "code"
+    },
+    "e604": {
+      "role": "code"
+    },
+    "e605": {
+      "role": "strong"
+    },
+    "e606": {
+      "role": "code"
+    },
+    "e607": {
+      "role": "code"
+    },
+    "e608": {
+      "role": "code"
+    },
+    "e609": {
+      "role": "code"
+    },
+    "e610": {
+      "role": "code"
+    },
+    "e611": {
+      "role": "code"
+    },
+    "e612": {
+      "role": "code"
+    },
+    "e613": {
+      "role": "code"
+    },
+    "e614": {
+      "role": "code"
+    },
+    "e615": {
+      "role": "code"
+    },
+    "e616": {
+      "role": "code"
+    },
+    "e617": {
+      "role": "code"
+    },
+    "e618": {
+      "role": "code"
+    },
+    "e619": {
+      "role": "code"
+    },
+    "e620": {
+      "role": "code"
+    },
+    "e621": {
+      "role": "code"
+    },
+    "e622": {
+      "role": "code"
+    },
+    "e623": {
+      "role": "code"
+    },
+    "e624": {
+      "role": "code"
+    },
+    "e625": {
+      "role": "code"
+    },
+    "e626": {
+      "role": "code"
+    },
+    "e627": {
+      "role": "code"
+    },
+    "e628": {
+      "role": "code"
+    },
+    "e629": {
+      "role": "code"
+    },
+    "e630": {
+      "role": "code"
+    },
+    "e631": {
+      "role": "code"
+    },
+    "e632": {
+      "role": "code"
+    },
+    "e633": {
+      "role": "code"
+    },
+    "e634": {
+      "role": "code"
+    },
+    "e635": {
+      "role": "code"
+    },
+    "e636": {
+      "role": "code"
+    },
+    "e637": {
+      "role": "code"
+    },
+    "e638": {
+      "role": "code"
+    },
+    "e639": {
+      "role": "code"
+    },
+    "e640": {
+      "role": "code"
+    },
+    "e641": {
+      "role": "code"
+    },
+    "e642": {
+      "role": "code"
+    },
+    "e643": {
+      "role": "code"
+    },
+    "e644": {
+      "role": "code"
+    },
+    "e645": {
+      "role": "code"
+    },
+    "e646": {
+      "role": "code"
+    },
+    "e647": {
+      "role": "code"
+    },
+    "e648": {
+      "role": "code"
+    },
+    "e649": {
+      "role": "code"
+    },
+    "e650": {
+      "role": "code"
+    },
+    "e651": {
+      "role": "code"
+    },
+    "e652": {
+      "role": "code"
+    },
+    "e653": {
+      "role": "code"
+    },
+    "e654": {
+      "role": "code"
+    },
+    "e655": {
+      "role": "code"
+    },
+    "e656": {
+      "role": "code"
+    },
+    "e657": {
+      "role": "code"
+    },
+    "e658": {
+      "role": "code"
+    },
+    "e659": {
+      "role": "code"
+    },
+    "e660": {
+      "role": "code"
+    },
+    "e661": {
+      "role": "code"
+    },
+    "e662": {
+      "role": "code"
+    },
+    "e663": {
+      "role": "code"
+    },
+    "e664": {
+      "role": "code"
+    },
+    "e665": {
+      "role": "code"
+    },
+    "e666": {
+      "role": "code"
+    },
+    "e667": {
+      "role": "button",
+      "name": "Exec View /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/date-time.md:12:Provid…"
+    },
+    "e668": {
+      "role": "generic"
+    },
+    "e669": {
+      "role": "generic"
+    },
+    "e671": {
+      "role": "img"
+    },
+    "e673": {
+      "role": "generic"
+    },
+    "e674": {
+      "role": "generic"
+    },
+    "e675": {
+      "role": "img"
+    },
+    "e677": {
+      "role": "generic"
+    },
+    "e678": {
+      "role": "generic"
+    },
+    "e679": {
+      "role": "generic"
+    },
+    "e680": {
+      "role": "generic"
+    },
+    "e681": {
+      "role": "generic"
+    },
+    "e682": {
+      "role": "generic"
+    },
+    "e683": {
+      "role": "generic"
+    },
+    "e685": {
+      "role": "button",
+      "name": "Read with lines 145-204 from /Users/huangjunjun/.nvm/versions/node/v22.21.1/lib/node_modules/openclaw/docs/tools/slash-commands.md Completed"
+    },
+    "e686": {
+      "role": "generic"
+    },
+    "e687": {
+      "role": "generic"
+    },
+    "e689": {
+      "role": "img"
+    },
+    "e692": {
+      "role": "generic"
+    },
+    "e694": {
+      "role": "img"
+    },
+    "e696": {
+      "role": "generic"
+    },
+    "e697": {
+      "role": "generic"
+    },
+    "e698": {
+      "role": "generic"
+    },
+    "e699": {
+      "role": "generic"
+    },
+    "e700": {
+      "role": "generic"
+    },
+    "e701": {
+      "role": "generic"
+    },
+    "e702": {
+      "role": "generic"
+    },
+    "e703": {
+      "role": "generic"
+    },
+    "e704": {
+      "role": "generic"
+    },
+    "e705": {
+      "role": "generic"
+    },
+    "e706": {
+      "role": "list"
+    },
+    "e707": {
+      "role": "listitem"
+    },
+    "e708": {
+      "role": "strong"
+    },
+    "e709": {
+      "role": "heading",
+      "name": "Usage surfaces (what shows where)"
+    },
+    "e710": {
+      "role": "list"
+    },
+    "e711": {
+      "role": "listitem"
+    },
+    "e712": {
+      "role": "strong"
+    },
+    "e713": {
+      "role": "code"
+    },
+    "e714": {
+      "role": "listitem"
+    },
+    "e715": {
+      "role": "strong"
+    },
+    "e716": {
+      "role": "code"
+    },
+    "e717": {
+      "role": "listitem"
+    },
+    "e718": {
+      "role": "code"
+    },
+    "e719": {
+      "role": "strong"
+    },
+    "e720": {
+      "role": "heading",
+      "name": "Model selection (/model)"
+    },
+    "e721": {
+      "role": "code"
+    },
+    "e722": {
+      "role": "paragraph"
+    },
+    "e723": {
+      "role": "code"
+    },
+    "e724": {
+      "role": "paragraph"
+    },
+    "e726": {
+      "role": "code"
+    },
+    "e727": {
+      "role": "paragraph"
+    },
+    "e728": {
+      "role": "list"
+    },
+    "e729": {
+      "role": "listitem"
+    },
+    "e730": {
+      "role": "code"
+    },
+    "e731": {
+      "role": "code"
+    },
+    "e732": {
+      "role": "listitem"
+    },
+    "e733": {
+      "role": "code"
+    },
+    "e734": {
+      "role": "code"
+    },
+    "e735": {
+      "role": "listitem"
+    },
+    "e736": {
+      "role": "code"
+    },
+    "e737": {
+      "role": "listitem"
+    },
+    "e738": {
+      "role": "code"
+    },
+    "e739": {
+      "role": "code"
+    },
+    "e740": {
+      "role": "code"
+    },
+    "e741": {
+      "role": "heading",
+      "name": "Debug overrides"
+    },
+    "e742": {
+      "role": "paragraph"
+    },
+    "e743": {
+      "role": "code"
+    },
+    "e744": {
+      "role": "strong"
+    },
+    "e745": {
+      "role": "code"
+    },
+    "e746": {
+      "role": "paragraph"
+    },
+    "e748": {
+      "role": "code"
+    },
+    "e749": {
+      "role": "paragraph"
+    },
+    "e750": {
+      "role": "list"
+    },
+    "e751": {
+      "role": "listitem"
+    },
+    "e752": {
+      "role": "strong"
+    },
+    "e753": {
+      "role": "code"
+    },
+    "e754": {
+      "role": "listitem"
+    },
+    "e755": {
+      "role": "code"
+    },
+    "e756": {
+      "role": "heading",
+      "name": "Config updates"
+    },
+    "e757": {
+      "role": "paragraph"
+    },
+    "e758": {
+      "role": "code"
+    },
+    "e759": {
+      "role": "code"
+    },
+    "e760": {
+      "role": "code"
+    },
+    "e761": {
+      "role": "paragraph"
+    },
+    "e763": {
+      "role": "code"
+    },
+    "e764": {
+      "role": "button",
+      "name": "Read View - **Native command arguments:** Discord uses autocomplete for dynamic options (and button menus when…"
+    },
+    "e765": {
+      "role": "generic"
+    },
+    "e766": {
+      "role": "generic"
+    },
+    "e768": {
+      "role": "img"
+    },
+    "e771": {
+      "role": "generic"
+    },
+    "e772": {
+      "role": "generic"
+    },
+    "e773": {
+      "role": "img"
+    },
+    "e775": {
+      "role": "generic"
+    },
+    "e776": {
+      "role": "generic"
+    },
+    "e777": {
+      "role": "generic"
+    },
+    "e778": {
+      "role": "generic"
+    },
+    "e779": {
+      "role": "generic"
+    },
+    "e780": {
+      "role": "generic"
+    },
+    "e781": {
+      "role": "generic"
+    },
+    "e782": {
+      "role": "generic"
+    },
+    "e783": {
+      "role": "generic"
+    },
+    "e784": {
+      "role": "paragraph"
+    },
+    "e785": {
+      "role": "paragraph"
+    },
+    "e786": {
+      "role": "list"
+    },
+    "e787": {
+      "role": "listitem"
+    },
+    "e788": {
+      "role": "code"
+    },
+    "e789": {
+      "role": "code"
+    },
+    "e790": {
+      "role": "listitem"
+    },
+    "e791": {
+      "role": "code"
+    },
+    "e792": {
+      "role": "listitem"
+    },
+    "e793": {
+      "role": "code"
+    },
+    "e794": {
+      "role": "listitem"
+    },
+    "e795": {
+      "role": "code"
+    },
+    "e796": {
+      "role": "listitem"
+    },
+    "e797": {
+      "role": "code"
+    },
+    "e798": {
+      "role": "paragraph"
+    },
+    "e799": {
+      "role": "generic"
+    },
+    "e800": {
+      "role": "generic"
+    },
+    "e801": {
+      "role": "generic"
+    },
+    "e802": {
+      "role": "generic"
+    },
+    "e803": {
+      "role": "generic"
+    },
+    "e804": {
+      "role": "generic"
+    },
+    "e807": {
+      "role": "paragraph"
+    },
+    "e808": {
+      "role": "link",
+      "name": "http://127.0.0.1:8000/v1/review/pre-market"
+    },
+    "e809": {
+      "role": "generic"
+    },
+    "e810": {
+      "role": "generic"
+    },
+    "e811": {
+      "role": "generic"
+    },
+    "e812": {
+      "role": "generic"
+    },
+    "e813": {
+      "role": "generic"
+    },
+    "e814": {
+      "role": "generic"
+    },
+    "e817": {
+      "role": "generic"
+    },
+    "e818": {
+      "role": "generic"
+    },
+    "e820": {
+      "role": "img"
+    },
+    "e822": {
+      "role": "generic"
+    },
+    "e824": {
+      "role": "img"
+    },
+    "e826": {
+      "role": "generic"
+    },
+    "e827": {
+      "role": "generic"
+    },
+    "e828": {
+      "role": "generic"
+    },
+    "e829": {
+      "role": "generic"
+    },
+    "e830": {
+      "role": "generic"
+    },
+    "e831": {
+      "role": "generic"
+    },
+    "e832": {
+      "role": "generic"
+    },
+    "e833": {
+      "role": "generic"
+    },
+    "e834": {
+      "role": "generic"
+    },
+    "e836": {
+      "role": "paragraph"
+    },
+    "e838": {
+      "role": "generic"
+    },
+    "e839": {
+      "role": "generic"
+    },
+    "e841": {
+      "role": "img"
+    },
+    "e843": {
+      "role": "generic"
+    },
+    "e844": {
+      "role": "generic"
+    },
+    "e845": {
+      "role": "img"
+    },
+    "e847": {
+      "role": "generic"
+    },
+    "e848": {
+      "role": "generic"
+    },
+    "e849": {
+      "role": "generic"
+    },
+    "e850": {
+      "role": "generic"
+    },
+    "e851": {
+      "role": "generic"
+    },
+    "e852": {
+      "role": "generic"
+    },
+    "e853": {
+      "role": "generic"
+    },
+    "e856": {
+      "role": "generic"
+    },
+    "e857": {
+      "role": "generic"
+    },
+    "e859": {
+      "role": "img"
+    },
+    "e861": {
+      "role": "generic"
+    },
+    "e863": {
+      "role": "img"
+    },
+    "e865": {
+      "role": "generic"
+    },
+    "e866": {
+      "role": "generic"
+    },
+    "e867": {
+      "role": "generic"
+    },
+    "e868": {
+      "role": "generic"
+    },
+    "e869": {
+      "role": "generic"
+    },
+    "e870": {
+      "role": "generic"
+    },
+    "e871": {
+      "role": "generic"
+    },
+    "e872": {
+      "role": "generic"
+    },
+    "e873": {
+      "role": "generic"
+    },
+    "e875": {
+      "role": "paragraph"
+    },
+    "e876": {
+      "role": "button",
+      "name": "Exec View try 1 http 502 body try 2 http 502 body try 3 http 502 body"
+    },
+    "e877": {
+      "role": "generic"
+    },
+    "e878": {
+      "role": "generic"
+    },
+    "e880": {
+      "role": "img"
+    },
+    "e882": {
+      "role": "generic"
+    },
+    "e883": {
+      "role": "generic"
+    },
+    "e884": {
+      "role": "img"
+    },
+    "e886": {
+      "role": "generic"
+    },
+    "e887": {
+      "role": "generic"
+    },
+    "e888": {
+      "role": "generic"
+    },
+    "e889": {
+      "role": "generic"
+    },
+    "e890": {
+      "role": "generic"
+    },
+    "e891": {
+      "role": "generic"
+    },
+    "e892": {
+      "role": "generic"
+    },
+    "e893": {
+      "role": "generic"
+    },
+    "e895": {
+      "role": "paragraph"
+    },
+    "e896": {
+      "role": "generic"
+    },
+    "e897": {
+      "role": "generic"
+    },
+    "e898": {
+      "role": "generic"
+    },
+    "e899": {
+      "role": "generic"
+    },
+    "e900": {
+      "role": "generic"
+    },
+    "e901": {
+      "role": "generic"
+    },
+    "e904": {
+      "role": "paragraph"
+    },
+    "e905": {
+      "role": "link",
+      "name": "http://127.0.0.1:8000/v1/review/pre-market"
+    },
+    "e907": {
+      "role": "generic"
+    },
+    "e908": {
+      "role": "generic"
+    },
+    "e909": {
+      "role": "generic"
+    },
+    "e910": {
+      "role": "generic"
+    },
+    "e911": {
+      "role": "generic"
+    },
+    "e912": {
+      "role": "generic"
+    },
+    "e915": {
+      "role": "generic"
+    },
+    "e916": {
+      "role": "generic"
+    },
+    "e918": {
+      "role": "img"
+    },
+    "e920": {
+      "role": "generic"
+    },
+    "e922": {
+      "role": "img"
+    },
+    "e924": {
+      "role": "generic"
+    },
+    "e925": {
+      "role": "generic"
+    },
+    "e926": {
+      "role": "generic"
+    },
+    "e927": {
+      "role": "generic"
+    },
+    "e928": {
+      "role": "generic"
+    },
+    "e929": {
+      "role": "generic"
+    },
+    "e930": {
+      "role": "generic"
+    },
+    "e931": {
+      "role": "generic"
+    },
+    "e932": {
+      "role": "generic"
+    },
+    "e934": {
+      "role": "paragraph"
+    },
+    "e936": {
+      "role": "generic"
+    },
+    "e937": {
+      "role": "generic"
+    },
+    "e939": {
+      "role": "img"
+    },
+    "e941": {
+      "role": "generic"
+    },
+    "e942": {
+      "role": "generic"
+    },
+    "e943": {
+      "role": "img"
+    },
+    "e945": {
+      "role": "generic"
+    },
+    "e946": {
+      "role": "generic"
+    },
+    "e947": {
+      "role": "generic"
+    },
+    "e948": {
+      "role": "generic"
+    },
+    "e949": {
+      "role": "generic"
+    },
+    "e950": {
+      "role": "generic"
+    },
+    "e951": {
+      "role": "generic"
+    },
+    "e954": {
+      "role": "generic"
+    },
+    "e955": {
+      "role": "generic"
+    },
+    "e957": {
+      "role": "img"
+    },
+    "e959": {
+      "role": "generic"
+    },
+    "e961": {
+      "role": "img"
+    },
+    "e963": {
+      "role": "generic"
+    },
+    "e964": {
+      "role": "generic"
+    },
+    "e965": {
+      "role": "generic"
+    },
+    "e966": {
+      "role": "generic"
+    },
+    "e967": {
+      "role": "generic"
+    },
+    "e968": {
+      "role": "generic"
+    },
+    "e969": {
+      "role": "generic"
+    },
+    "e970": {
+      "role": "generic"
+    },
+    "e971": {
+      "role": "generic"
+    },
+    "e973": {
+      "role": "paragraph"
+    },
+    "e974": {
+      "role": "strong"
+    },
+    "e975": {
+      "role": "strong"
+    },
+    "e976": {
+      "role": "strong"
+    },
+    "e978": {
+      "role": "generic"
+    },
+    "e979": {
+      "role": "generic"
+    },
+    "e981": {
+      "role": "img"
+    },
+    "e983": {
+      "role": "generic"
+    },
+    "e984": {
+      "role": "generic"
+    },
+    "e985": {
+      "role": "img"
+    },
+    "e987": {
+      "role": "generic"
+    },
+    "e988": {
+      "role": "generic"
+    },
+    "e989": {
+      "role": "generic"
+    },
+    "e990": {
+      "role": "generic"
+    },
+    "e991": {
+      "role": "generic"
+    },
+    "e992": {
+      "role": "generic"
+    },
+    "e993": {
+      "role": "generic"
+    },
+    "e994": {
+      "role": "generic"
+    },
+    "e996": {
+      "role": "paragraph"
+    },
+    "e997": {
+      "role": "strong"
+    },
+    "e998": {
+      "role": "strong"
+    },
+    "e999": {
+      "role": "strong"
+    },
+    "e1000": {
+      "role": "generic"
+    },
+    "e1001": {
+      "role": "generic"
+    },
+    "e1002": {
+      "role": "generic"
+    },
+    "e1003": {
+      "role": "generic"
+    },
+    "e1004": {
+      "role": "generic"
+    },
+    "e1005": {
+      "role": "generic"
+    },
+    "e1008": {
+      "role": "paragraph"
+    },
+    "e1009": {
+      "role": "generic"
+    },
+    "e1010": {
+      "role": "generic"
+    },
+    "e1011": {
+      "role": "generic"
+    },
+    "e1012": {
+      "role": "generic"
+    },
+    "e1013": {
+      "role": "generic"
+    },
+    "e1014": {
+      "role": "generic"
+    },
+    "e1017": {
+      "role": "generic"
+    },
+    "e1018": {
+      "role": "generic"
+    },
+    "e1020": {
+      "role": "img"
+    },
+    "e1022": {
+      "role": "generic"
+    },
+    "e1024": {
+      "role": "img"
+    },
+    "e1026": {
+      "role": "generic"
+    },
+    "e1027": {
+      "role": "generic"
+    },
+    "e1028": {
+      "role": "generic"
+    },
+    "e1029": {
+      "role": "generic"
+    },
+    "e1030": {
+      "role": "generic"
+    },
+    "e1031": {
+      "role": "generic"
+    },
+    "e1032": {
+      "role": "generic"
+    },
+    "e1033": {
+      "role": "generic"
+    },
+    "e1034": {
+      "role": "generic"
+    },
+    "e1036": {
+      "role": "paragraph"
+    },
+    "e1037": {
+      "role": "strong"
+    },
+    "e1038": {
+      "role": "strong"
+    },
+    "e1039": {
+      "role": "strong"
+    },
+    "e1041": {
+      "role": "generic"
+    },
+    "e1042": {
+      "role": "generic"
+    },
+    "e1044": {
+      "role": "img"
+    },
+    "e1046": {
+      "role": "generic"
+    },
+    "e1047": {
+      "role": "generic"
+    },
+    "e1048": {
+      "role": "img"
+    },
+    "e1050": {
+      "role": "generic"
+    },
+    "e1051": {
+      "role": "generic"
+    },
+    "e1052": {
+      "role": "generic"
+    },
+    "e1053": {
+      "role": "generic"
+    },
+    "e1054": {
+      "role": "generic"
+    },
+    "e1055": {
+      "role": "generic"
+    },
+    "e1056": {
+      "role": "generic"
+    },
+    "e1057": {
+      "role": "generic"
+    },
+    "e1059": {
+      "role": "paragraph"
+    },
+    "e1060": {
+      "role": "strong"
+    },
+    "e1061": {
+      "role": "strong"
+    },
+    "e1062": {
+      "role": "strong"
+    },
+    "e1063": {
+      "role": "generic"
+    },
+    "e1064": {
+      "role": "generic"
+    },
+    "e1065": {
+      "role": "generic"
+    },
+    "e1074": {
+      "role": "generic"
+    },
+    "e1075": {
+      "role": "generic"
+    },
+    "e1076": {
+      "role": "generic"
+    },
+    "e1079": {
+      "role": "paragraph"
+    },
+    "e1080": {
+      "role": "link",
+      "name": "http://127.0.0.1:8000/v1/review/pre-market(use_mock=true)，按盘前模板生成最终文本，再回写"
+    },
+    "e1081": {
+      "role": "generic"
+    },
+    "e1082": {
+      "role": "generic"
+    },
+    "e1083": {
+      "role": "generic"
+    },
+    "e1084": {
+      "role": "generic"
+    },
+    "e1085": {
+      "role": "generic"
+    },
+    "e1086": {
+      "role": "generic"
+    },
+    "e1089": {
+      "role": "generic"
+    },
+    "e1090": {
+      "role": "generic"
+    },
+    "e1092": {
+      "role": "img"
+    },
+    "e1094": {
+      "role": "generic"
+    },
+    "e1096": {
+      "role": "img"
+    },
+    "e1098": {
+      "role": "generic"
+    },
+    "e1099": {
+      "role": "generic"
+    },
+    "e1100": {
+      "role": "generic"
+    },
+    "e1101": {
+      "role": "generic"
+    },
+    "e1102": {
+      "role": "generic"
+    },
+    "e1103": {
+      "role": "generic"
+    },
+    "e1104": {
+      "role": "generic"
+    },
+    "e1105": {
+      "role": "generic"
+    },
+    "e1106": {
+      "role": "generic"
+    },
+    "e1107": {
+      "role": "generic"
+    },
+    "e1108": {
+      "role": "paragraph"
+    }
+  }
+}
