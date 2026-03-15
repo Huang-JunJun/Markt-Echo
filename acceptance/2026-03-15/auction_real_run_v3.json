@@ -1,0 +1,307 @@
+{
+  "runId": "c5230231-5f14-4907-bd3d-5e2e6a5391b4",
+  "status": "ok",
+  "summary": "completed",
+  "result": {
+    "payloads": [
+      {
+        "text": "# 9:25 竞价复盘（2026-03-15）\n\n## 1) 一句话判断\n- 指数端（上证 -0.82%、创业板 -0.22%）与市场广度偏弱（情绪值 45.7）形成压制，但高弹性个股仍有冲高，竞价呈现“指数弱、题材局部活跃、成交高度集中”的分化格局，开盘预期以结构性机会为主。\n\n## 2) 高标 / 核心反馈\n- 高标端仍有亮点：中红医疗（+20.02%）、通裕重工（+19.94%）、英科医疗（+17.70%）居前，说明短线资金仍在追逐弹性。\n- 负反馈同样强烈：春晖智控（-12.13%）、泽宇智能（-11.45%）、优刻得（-10.79%）跌幅靠前，显示高低切换快、容错率不高。\n- 核心方向从涨停候选看偏向卫浴电器、农化制品、基础建设，反馈为“题材有轮动但一致性不足，强弱淘汰并行”。\n\n## 3) 板块竞价前列\n- 汽车电子：华工科技成交额 194.54 亿元（居首），虽竞价 -7.20%，但资金聚集度最高，是分歧资金去向的关键锚点。\n- 新能源链（光伏/储能）：阳光电源成交额 181.60 亿元、竞价 +1.32%，宁德时代成交额 142.01 亿元、竞价 +0.38%，容量赛道仍在承接主流资金。\n- 轮动题材（卫浴电器/农化制品/基础建设）：进入涨停候选前列，需观察是否能从“名单热度”转化为“开盘持续性”。\n\n## 4) 开盘观察\n- 观察指数与广度是否同步修复：若上证/创业板与上涨家数仍弱，题材大概率维持局部行情。\n- 观察高标股（中红医疗、通裕重工、英科医疗）是否出现快速分歧回落，验证追高风险。\n- 观察华工科技这类“高成交+竞价走弱”个股是继续放量下探还是资金回流翻红，判断市场风险偏好方向。\n- 观察卫浴电器、农化制品、基础建设是否有前排快速封板与扩散，确认轮动题材是否具备可交易持续性。\n\n## 数据提示\n- limit_up_candidates 当前为 derived：基于真实板块榜与涨停池聚合，不是单一官方竞价板块榜单。\n- auction_sentiment 当前为 derived：基于真实指数、市场广度与涨跌停池派生，不是交易所官方情绪口径。\n- auction 使用的最新可用真实快照日期为 2026-03-13，当前请求日期为 2026-03-15。\n- 当前不在 09:15-09:26 竞价窗口，auction 使用的是最新可用实时快照（2026-03-13 15:35:30）。",
+        "mediaUrl": null
+      }
+    ],
+    "meta": {
+      "durationMs": 63739,
+      "agentMeta": {
+        "sessionId": "43f9e25a-be90-4a61-884a-902e457a2c76",
+        "provider": "openai-codex",
+        "model": "gpt-5.3-codex",
+        "usage": {
+          "input": 56734,
+          "output": 2031,
+          "cacheRead": 206720,
+          "total": 58551
+        },
+        "lastCallUsage": {
+          "input": 457,
+          "output": 750,
+          "cacheRead": 57344,
+          "cacheWrite": 0,
+          "total": 58551
+        },
+        "promptTokens": 57801
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1773562614210,
+        "sessionId": "auction-real-20260315-v2",
+        "sessionKey": "agent:auction-real-main:main",
+        "provider": "openai-codex",
+        "model": "gpt-5.3-codex",
+        "workspaceDir": "/Users/huangjunjun/.openclaw/workspace",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 150000,
+        "bootstrapTruncation": {
+          "warningMode": "once",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 25435,
+          "projectContextChars": 12268,
+          "nonProjectContextChars": 13167
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/AGENTS.md",
+            "missing": false,
+            "rawChars": 7809,
+            "injectedChars": 7809,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/SOUL.md",
+            "missing": false,
+            "rawChars": 1664,
+            "injectedChars": 1664,
+            "truncated": false
+          },
+          {
+            "name": "TOOLS.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/TOOLS.md",
+            "missing": false,
+            "rawChars": 850,
+            "injectedChars": 850,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/IDENTITY.md",
+            "missing": false,
+            "rawChars": 633,
+            "injectedChars": 633,
+            "truncated": false
+          },
+          {
+            "name": "USER.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/USER.md",
+            "missing": false,
+            "rawChars": 474,
+            "injectedChars": 474,
+            "truncated": false
+          },
+          {
+            "name": "HEARTBEAT.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/HEARTBEAT.md",
+            "missing": false,
+            "rawChars": 167,
+            "injectedChars": 167,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "/Users/huangjunjun/.openclaw/workspace/BOOTSTRAP.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 74,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 2355,
+          "entries": [
+            {
+              "name": "auction",
+              "blockChars": 205
+            },
+            {
+              "name": "close",
+              "blockChars": 201
+            },
+            {
+              "name": "pre_market",
+              "blockChars": 207
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 507
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 312
+            },
+            {
+              "name": "weather",
+              "blockChars": 432
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 2678,
+          "schemaChars": 19335,
+          "entries": [
+            {
+              "name": "read",
+              "summaryChars": 298,
+              "schemaChars": 392,
+              "propertiesCount": 4
+            },
+            {
+              "name": "edit",
+              "summaryChars": 129,
+              "schemaChars": 591,
+              "propertiesCount": 6
+            },
+            {
+              "name": "write",
+              "summaryChars": 127,
+              "schemaChars": 313,
+              "propertiesCount": 3
+            },
+            {
+              "name": "exec",
+              "summaryChars": 181,
+              "schemaChars": 1086,
+              "propertiesCount": 12
+            },
+            {
+              "name": "process",
+              "summaryChars": 85,
+              "schemaChars": 961,
+              "propertiesCount": 12
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1251,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "canvas",
+              "summaryChars": 106,
+              "schemaChars": 661,
+              "propertiesCount": 18
+            },
+            {
+              "name": "nodes",
+              "summaryChars": 122,
+              "schemaChars": 1800,
+              "propertiesCount": 37
+            },
+            {
+              "name": "cron",
+              "summaryChars": 2689,
+              "schemaChars": 690,
+              "propertiesCount": 13
+            },
+            {
+              "name": "message",
+              "summaryChars": 89,
+              "schemaChars": 4860,
+              "propertiesCount": 91
+            },
+            {
+              "name": "tts",
+              "summaryChars": 152,
+              "schemaChars": 223,
+              "propertiesCount": 2
+            },
+            {
+              "name": "gateway",
+              "summaryChars": 464,
+              "schemaChars": 497,
+              "propertiesCount": 12
+            },
+            {
+              "name": "agents_list",
+              "summaryChars": 118,
+              "schemaChars": 33,
+              "propertiesCount": 0
+            },
+            {
+              "name": "sessions_list",
+              "summaryChars": 54,
+              "schemaChars": 212,
+              "propertiesCount": 4
+            },
+            {
+              "name": "sessions_history",
+              "summaryChars": 36,
+              "schemaChars": 161,
+              "propertiesCount": 3
+            },
+            {
+              "name": "sessions_send",
+              "summaryChars": 84,
+              "schemaChars": 273,
+              "propertiesCount": 5
+            },
+            {
+              "name": "sessions_spawn",
+              "summaryChars": 198,
+              "schemaChars": 922,
+              "propertiesCount": 16
+            },
+            {
+              "name": "subagents",
+              "summaryChars": 105,
+              "schemaChars": 191,
+              "propertiesCount": 4
+            },
+            {
+              "name": "session_status",
+              "summaryChars": 207,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_search",
+              "summaryChars": 175,
+              "schemaChars": 1198,
+              "propertiesCount": 10
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 260,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "memory_search",
+              "summaryChars": 334,
+              "schemaChars": 139,
+              "propertiesCount": 3
+            },
+            {
+              "name": "memory_get",
+              "summaryChars": 151,
+              "schemaChars": 128,
+              "propertiesCount": 3
+            }
+          ]
+        }
+      },
+      "stopReason": "stop"
+    }
+  }
+}

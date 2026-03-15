@@ -1,0 +1,27 @@
+{
+  "report_id": "auction-2026-03-15-67175e4393",
+  "trade_date": "2026-03-15",
+  "source": "real_partial",
+  "limit_up_candidates": [
+    "卫浴电器",
+    "农化制品",
+    "基础建设"
+  ],
+  "auction_sentiment": 45.7,
+  "field_sources": {
+    "index_auction": "real:sina_index_quote",
+    "top_gainers": "real:sina_hq_rank_changepercent_desc",
+    "top_losers": "real:sina_hq_rank_changepercent_asc",
+    "turnover_top": "real:sina_hq_rank_amount_desc",
+    "limit_up_candidates": "derived_from_real_board_rank_and_limit_up_pool",
+    "auction_sentiment": "derived_from_real_index_breadth_and_limit_pool",
+    "market_breadth": "real:eastmoney_csi_all_share_quote",
+    "limit_pool": "real:eastmoney_limit_up_down_pool"
+  },
+  "warnings": [
+    "limit_up_candidates 当前为 derived：基于真实板块榜与涨停池聚合，不是单一官方竞价板块榜单",
+    "auction_sentiment 当前为 derived：基于真实指数、市场广度与涨跌停池派生，不是交易所官方情绪口径",
+    "auction 使用的最新可用真实快照日期为 2026-03-13，当前请求日期为 2026-03-15",
+    "当前不在 09:15-09:26 竞价窗口，auction 使用的是最新可用实时快照（2026-03-13 15:35:30）"
+  ]
+}

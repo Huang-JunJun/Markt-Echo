@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+from datetime import date
 from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
 from app.api import ServiceContainer, router
+from app.providers.real_auction_provider import RealAuctionProvider
 from app.providers.base import ProviderResult
 from app.schemas import ReportType
 from app.service import DataService
@@ -168,6 +170,69 @@ def test_generate_auction_mock_provider(tmp_path: Path) -> None:
     assert payload["summary_data"]["top_gainers"][0]["code"] == "SZ300308"
     assert payload["summary_data"]["turnover_top"][0]["name"] == "宁德时代"
     assert payload["warnings"] == []
+
+
+def test_real_auction_provider_prefers_market_breadth_and_limit_pool() -> None:
+    provider = RealAuctionProvider()
+
+    provider._fetch_index_auction = lambda: (  # type: ignore[method-assign]
+        [
+            {"name": "上证指数", "value": 3310.0, "change_pct": 0.42},
+            {"name": "创业板指", "value": 2198.0, "change_pct": 1.18},
+        ],
+        {"source_url": "https://example.com/index"},
+    )
+    provider._fetch_rank_rows = lambda sort, asc, limit: (  # type: ignore[method-assign]
+        [
+            {"code": "SZ300308", "symbol": "sz300308", "name": "中际旭创", "change_pct": 4.2, "turnover": 8.5e8},
+            {"code": "SZ002594", "symbol": "sz002594", "name": "比亚迪", "change_pct": 3.6, "turnover": 7.1e8},
+        ][:limit],
+        {"sort": sort, "asc": asc},
+    )
+    provider._fetch_board_rank = lambda fs, board_type, limit: (  # type: ignore[method-assign]
+        [
+            {
+                "code": "BK1001",
+                "name": "CPO概念" if board_type == "concept" else "通信设备",
+                "change_pct": 3.8,
+                "net_inflow_billion": 5.2,
+                "leading_stock": "中际旭创",
+            },
+            {
+                "code": "BK1002",
+                "name": "光模块" if board_type == "concept" else "汽车整车",
+                "change_pct": 3.1,
+                "net_inflow_billion": 3.6,
+                "leading_stock": "天孚通信",
+            },
+        ][:limit],
+        {"board_type": board_type, "source_url": "https://example.com/board"},
+    )
+    provider._fetch_limit_pool_snapshot = lambda trade_date, row_limit=50: (  # type: ignore[method-assign]
+        {"limit_up_count": 58, "limit_down_count": 9, "qdate": "2026-03-13"},
+        [
+            {"industry": "通信设备", "fund_billion": 4.2, "limit_up_streak": 3},
+            {"industry": "通信设备", "fund_billion": 2.1, "limit_up_streak": 2},
+            {"industry": "汽车整车", "fund_billion": 1.6, "limit_up_streak": 1},
+        ],
+        {"limit_up_source_url": "https://example.com/pool"},
+    )
+    provider._fetch_market_breadth = lambda: (  # type: ignore[method-assign]
+        {"up_count": 2100, "down_count": 2600, "flat_count": 120, "reference": "中证全指", "change_pct": -0.25},
+        {"source_url": "https://example.com/breadth"},
+    )
+    provider._fetch_quote_snapshots = lambda symbols: {  # type: ignore[method-assign]
+        "sh000001": {"snapshot_date": "2026-03-13", "snapshot_time": "15:35:30"},
+    }
+    provider._is_auction_window = lambda now_ts=None: False  # type: ignore[method-assign]
+
+    result = provider.get_auction(date(2026, 3, 15))
+
+    assert result.source == "real_partial"
+    assert result.summary_data["limit_up_candidates"][0] in {"通信设备", "CPO概念"}
+    assert result.raw_data["field_sources"]["limit_up_candidates"] == "derived_from_real_board_rank_and_limit_up_pool"
+    assert result.raw_data["field_sources"]["auction_sentiment"] == "derived_from_real_index_breadth_and_limit_pool"
+    assert any("auction_sentiment 当前为 derived" in warning for warning in result.warnings)
 
 
 def test_generate_close_mock_provider(tmp_path: Path) -> None:
